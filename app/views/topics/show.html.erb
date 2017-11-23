@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+<div class="child row">
+  <div class="container">
+    <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
+      <h1>詳細画面</h1>
+      <p><strong><%= @topic.title %></strong></p>
+      <p><%= @topic.content %></p>
+      <p>コメント一覧</p>
+      <div id="comments_area">
+        <%= render partial: 'comments/index', locals: { comments: @comments, topic: @topic } %>
+      </div>
+      <%= render partial: 'comments/form', locals: { comment: @comment, topic: @topic } %>
+      <%= link_to '戻る', topics_path %>
+    </div>
+  </div>
+</div>

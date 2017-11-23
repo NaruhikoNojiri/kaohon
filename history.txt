@@ -1,0 +1,500 @@
+  309  rails g model picture
+  310  rails db
+  311  ls
+  312  pwd
+  313  pwd
+  314  rails g model picture
+  315  ls
+  316  cd ..
+  317  ls
+  318  cd is
+  319  cd instar/
+  320  ls
+  321  cd db
+  322  ls
+  323  cd ..
+  324  ls
+  325  cat Gemfile
+  326  ls
+  327  cd
+  328  cd workspace/instar/
+  329  ls
+  330  rails g model picture
+  331  grep picture
+  332  rails g controller pictures index
+  333  git branch
+  334  git init
+  335  git branch
+  336  ls
+  337  ls -a
+  338  ls -l
+  339  rails g model picture
+  340  bundle install
+  341  rails s
+  342  rails s
+  343  rails s
+  344  ls
+  345  ls -a
+  346  rails config
+  347  pwd
+  348  ls
+  349  cd ..
+  350  ls
+  351  cd instar/
+  352  rake drop
+  353  rake db:drop
+  354  cd
+  355  ls
+  356  cd w
+  357  cd workspace/
+  358  ls
+  359  rails _4.2.3_ new shashin -d postgresql
+  360  cd shashin/
+  361  pwd
+  362  bundle install
+  363  rake db:create
+  364  rails g model picture
+  365  rake db:migrate
+  366  rails g controller pictures index
+  367  rake db:migrate
+  368  rails s
+  369  rails s
+  370  rake db:migrate
+  371  rake route
+  372  rake routes
+  373  rails g controller top
+  374  rails s
+  375  rake db:migrate
+  376  pwd
+  377  ls
+  378  rake db:migrate
+  379  rake db:migrate:reset
+  380  ls
+  381  rails
+  382  rails s
+  383  pwd
+  384  cd ..
+  385  ls
+  386  git clone https://github.com/DiveintoCode-corp/DIC_thema_lesson.git
+  387  git remote
+  388  git remote set-url origin git@github.com:NaruhikoNojiri/HHN.git
+  389  git init
+  390  git remote set-url origin git@github.com:NaruhikoNojiri/HHN.git
+  391  ls
+  392  cd DIC_thema_lesson/
+  393  ls
+  394  git remote set-url origin git@github.com:NaruhikoNojiri/HHN.git
+  395  git push origin master
+  396  git remote
+  397  rails s
+  398  bundle install
+  399  remote -v
+  400  pwd
+  401  remote b
+  402  git remote -v
+  403  git branch -a
+  404  git branch
+  405  git branch -a
+  406  bundle install --path vendor/bundle 
+  407  rake db:create
+  408  bundle exec rake db:create
+  409  rake db:migrate
+  410  bundle exec rake db:migrate
+  411  rails s
+  412  rails s
+  413  git 
+  414  git branch
+  415  pwd
+  416  git branches
+  417  git branch -a
+  418  pwd
+  419  rails s
+  420  rails s
+  421  rails c
+  422  rake db:migrate
+  423  rails db
+  424  rake routes
+  425  bundle update
+  426  rake routes
+  427  rake routes
+  428  git branch
+  429  git checkout -b issue#2
+  430  git branch
+  431  bundle install
+  432  pwd
+  433  git branch
+  434  git add -A
+  435  git commit -m 'CRUD画面をbootstrap化しました。'
+  436  git push origin issue#2
+  437  git branch all
+  438  git branch -a
+  439  git branch
+  440  git branch -a
+  441  git branch -d issue#2
+  442  git checkout master
+  443  git branch -d issue#2
+  444  git branch
+  445  git merge issue#2
+  446  git branch -d issue#2
+  447  git checkout develop
+  448  git checkout -b develop
+  449  git pull origin develop
+  450  git all
+  451  git branch -a
+  452  git branch
+  453  git master
+  454  git checkout master
+  455  git branch -a
+  456  git pull origin master
+  457  cd 
+  458  pwd
+  459  /w
+  460  cd workspace/
+  461  ls
+  462  cd shashin/
+  463  ls
+  464  rails s
+  465  rails s
+  466  rails s
+  467  rails s
+  468  rake routes
+  469  rake routes
+  470  rake routes
+  471  rake routes
+  472  bundle install
+  473  bundle install
+  474  rake routes
+  475  rails s
+  476  rails s
+  477  bundle install
+  478  rails g devise:install
+  479  rails g devise user
+  480  rake routes
+  481  rake db:migrate
+  482  rails g devise:views
+  483  rake routes
+  484  rails c
+  485  rails g migration AddNameToUsers name:string
+  486  rake db:migrate
+  487  bundle install
+  488  bundle install
+  489  rails g bootstrap:install static
+  490  rails g controller Top index
+  491  rails s
+  492  rails s
+  493  rails s
+  494  rails s
+  495  rails s
+  496  rails s
+  497  rails s
+  498  heroku pg:reset DATABASE
+  499  heroku run rake db:migrate RAILS_ENV=production
+  500  heroku restart
+  501  heroku run rails c
+  502  heroku config
+  503  heroku config:get 
+  504  heroku config:get SENDGRID_PASSWORD
+  505  heroku config:set SENDGRID_PASSWORD
+  506  heroku config:set SENDGRID_PASSWORD=orowdo5u7742
+  507  heroku config
+  508  heroku restart
+  509  heroku pg:reset DATABASE
+  510  heroku run rake db:migrate
+  511  heroku restart
+  512  rake routes
+  513  bundle install
+  514  bundle update
+  515  rails g rails_admin:install
+  516  rails g migration AddAdminToUser admin
+  517  rake db:migrate
+  518  bundle install
+  519  rails g cancan:ability
+  520  rails c
+  521  git add -A
+  522  git commit -m "admin function implemented."
+  523  git status
+  524  git push origin master
+  525  git push heroku master
+  526  heroku run db:migrate
+  527  heroku run rails c
+  528  heroku restart
+  529  heroku run rails c
+  530  heroku run db:migrate
+  531  heroku run rake db:migrate
+  532  heroku restart
+  533  heroku run rails c
+  534  rake routes
+  535  bundle install
+  536  rake routes
+  537  bundle install
+  538  heroku config:add FACEBOOK_ID_PRODUCTION=498653723825004
+  539  heroku config:add FACEBOOK_SECRET_PRODUCTION=2cbaac65fedccd173fdd9df218590441
+  540  heroku config:add TWITTER_ID_PRODUCTION=ec1hcQU4MhH24MD9gZmC2IR46
+  541  heroku config:add TWITTER_SECRET_PRODUCTION=g6W7d8bJJyyLSivRzztvm9Qwowdb1DcULskFh0D9kPd8Wl0CG5
+  542  heroku config
+  543  rails g migration AddOmniauthColumnsToUsers uid provider image_url
+  544  bundle install
+  545  rails g migration AddOmniauthColumnsToUsers uid provider image_url
+  546  rake db:migrate:reset
+  547  rake db:reset
+  548  rake db:migration
+  549  rake db:migrate
+  550  mkdir app/controllers/users
+  551  rails g controller users::OmniauthCallbacks
+  552  rails g controller users::registrations
+  553  bundle install
+  554  brew update
+  555  brew install imagemagick
+  556  rails generate uploader Avatar
+  557  rails g migration add_avatar_to_users avatar:string
+  558  rake db:migrate
+  559  rake route
+  560  rake routes
+  561  rails g migrate AddPictureURLtoPicture
+  562  rails g migrate AddPictureURLtoPicture
+  563  rails g migration AddPictureURLtoPicture picture_url string
+  564  rake db:migrate
+  565  rake db:migrate
+  566  rake db:migrate --trace
+  567  rails g migration AddPictureToPictures
+  568  rake db:migrate
+  569  rake db:migrate reset
+  570  rake db migrate reset
+  571  rake db:migrate:reset
+  572  rake db:migrate:reset
+  573  rake db:reset
+  574  rails c
+  575  rake db:migrate:reset
+  576  rake db:migrate:reset
+  577  rake:db version
+  578  rake db:version
+  579  rake db:rollback
+  580  rake db:reset
+  581  rake db:rollback
+  582  rake db:migrate
+  583  rake db:rollback
+  584  rake db:rollback
+  585  rake db:migrate
+  586  rails g migration Add_User_ID_to_Pictures
+  587  rake db:migrate
+  588  rails c
+  589  rake db:reset
+  590  rails c
+  591  rake db:reset
+  592  rails c
+  593  git add -A
+  594  git commit -m "取り急ぎ完成版。"
+  595  git status
+  596  git logs
+  597  git log
+  598  git push origin master
+  599  git push heroku master
+  600  heroku pg:reset DATABASE
+  601  heroku run rake db:migrate
+  602  rake assets:precompile RAILS_ENV=production
+  603  git push origin master
+  604  git add -A
+  605  git commmit -m "assets precompiled."
+  606  git commit -m "assets precompiled."
+  607  git push origin master
+  608  git push heorku master
+  609  git push heroku master
+  610  heroku restart
+  611  heroku config
+  612  heroku restart
+  613  git push origin master
+  614  heroku config
+  615  heroku config:unset FACEBOOK_ID_PRODUCTION
+  616  heroku config:set FACEBOOK_ID_PRODUCTION=498653723825004
+  617  bundle update
+  618  pwd
+  619  heroku config
+  620  heroku config:set FACEBOOK_SECRET_PRODUCTION=5b0bbd7988e11f0d6be560a44b61accf
+  621  heroku config
+  622  heroku restart
+  623  heroku restart
+  624  heroku restart
+  625  heroku restart
+  626  pwd
+  627  rails s
+  628  cd ../achieve/
+  629  ls
+  630  pwed
+  631  pwd
+  632  rake routes
+  633  bundle update
+  634  rake routes
+  635  rake routes
+  636  rake routes
+  637  rake routes
+  638  rails g model Comment user:references blog:references content:text
+  639  rake db:migrate
+  640  rails c
+  641  rails c
+  642  rails g controller Comments create
+  643  rake routes
+  644  rails c
+  645  rake routes
+  646  git add -A
+  647  git commit -m "dive15 completed"
+  648  git status
+  649  git logs
+  650  git log
+  651  git push origin master
+  652  rake assets:precompile RAILS_ENV=production
+  653  git add -A
+  654  git status
+  655  git commit -m "assets precompiled"
+  656  git push origin master
+  657  git push heroku master
+  658  heroku restart
+  659  heroku run rake db:migrate
+  660  rail g model Relationship follower_id:integer:index followed_id:integer:index
+  661  rails g model Relationship follower_id:integer:index followed_id:integer:index
+  662  rake db:migrate
+  663  rails g controller users index
+  664  rake routes
+  665  rails g controller relationships create destroy
+  666  rails c
+  667  show.html.erb
+  668  rake routes
+  669  rake assets:precompile RAILS_ENV=production
+  670  git add -A
+  671  git commit -m "Commit for DIVE16."
+  672  git status
+  673  git log
+  674  git push origin master
+  675  git push heroku master
+  676  heroku run rake db:migrate
+  677  heroku restart
+  678  rake assets:precompile RAILS_ENV=production
+  679  git add -A
+  680  git commit -m "Additional commit for DIVE16."
+  681  git push origin master
+  682  git push heroku master
+  683  heroku restart
+  684  rails g Conversation sender_id:integer recipient_id:integer
+  685  rails g model Message sender_id:integer recipient_id:integer
+  686  rails g model Message body:text conversation:references user:references read:boolean
+  687  rake db:migrate
+  688  rails g controller Conversations index create
+  689  rails g controller Messages index create
+  690  rake routes
+  691  bundle install
+  692  heroku config:add PUSHER_APP_ID=415325
+  693  heroku config:add PUSHER_KEY=c4edfdf15c3366fef5ac
+  694  heroku config:add PUSHER_SECRET=ad7cb44266342ac1f152
+  695  rais g model Notification read:boolean user:references comment:references
+  696  rails g model Notification read:boolean user:references comment:references
+  697  rake db:migrate
+  698  rails c
+  699  cd 
+  700  ls
+  701  cd /
+  702  ls
+  703  cd
+  704  ls
+  705  mkdir .ssh
+  706  ls -a
+  707  ssh-keygen -t rsa
+  708  cat ~/.ssh/id_rsa.pub
+  709  ruby
+  710  ruby -v
+  711  pwd
+  712  cd ~
+  713  ls
+  714  cd workspace/
+  715  ls
+  716  cd achieve/
+  717  ls
+  718  bundle insta;;
+  719  bundle install
+  720  gem install fog-dynect -v '0.0.3
+  721  gem install fog-dynect -v '0.0.3'
+  722  bundle install
+  723  rails c
+  724  rails c
+  725  git add =A
+  726  git add -A
+  727  git commit -am "change storage to fog from file"
+  728  git push origin master
+  729  bundle install
+  730  pwd
+  731  cat /Users/nojiritoshihiko/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/extensions/x86_64-darwin-16/2.3.0-static/kgio-2.11.0/gem_make.out
+  732  bundle install
+  733  bundle install
+  734  gem install kgio -v '2.11.0'
+  735  cat /Users/nojiritoshihiko/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/extensions/x86_64-darwin-16/2.3.0-static/kgio-2.11.0/mkmf.log
+  736  less /Users/nojiritoshihiko/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/extensions/x86_64-darwin-16/2.3.0-static/kgio-2.11.0/mkmf.logsudo xcodebuild -license
+  737  sudo xcodebuild -license
+  738  sudo xcodebuild -license
+  739  bundle install
+  740  pwd
+  741  bundle exec cap install
+  742  touch ./config/unicorn/production.rb
+  743  ls
+  744  touch config/unicorn/production.rb
+  745  mkdir config/unicorn
+  746  ls
+  747  touch config/unicorn/production.rb
+  748  cp public/assets/404.png public/404.png
+  749  git add -A
+  750  git commit -m "init unicorm"
+  751  git commit --amend
+  752  git push origin master
+  753  bundle exec cap production deploy:check
+  754  bundle exec cap production deploy:check --trace
+  755  ssh -i /Users/nojiritoshihiko/.ssh/id_rsa app@13.113.102.208
+  756  ls /Users/nojiritoshihiko/.ssh/id_rsa.pub
+  757  ssh -i /Users/nojiritoshihiko/.ssh/id_rsa app@13.113.102.208
+  758  bundle exec cap production deploy:check --trace
+  759  ls /Users/nojiritoshihiko/.ssh/
+  760  bundle exec rake secret
+  761  heroku config
+  762  bundle exec cap production deploy
+  763  bundle exec cap production deploy
+  764  pwd
+  765  ls
+  766  rails c
+  767  heroku run rails c
+  768  rake assets:precompile RAILS_ENV=PRODCUTION
+  769  rake assets:precompile RAILS_ENV=PRODUCTION
+  770  rake assets:precompile RAILS_ENV=production
+  771  git add -A
+  772  git commit -m "assets precompiled"
+  773  git push origin master 
+  774  git push heroku master
+  775  heroku restart
+  776  heroku run rails c
+  777  heroku config:add AWS_ACCESS_KEY_ID=AKIAJWYUF6OGPNJUU5EA
+  778  heroku config:add AWS_SECRET_ACCESS_KEY=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
+  779  heroku config
+  780  heroku restart
+  781  heroku run rails c
+  782  git add -A
+  783  git commit -m "remove conf gor cloud9 from development.rb "
+  784  git status
+  785  git push origin master
+  786  bundle exec cap production deploy
+  787  rails c
+  788  heroku config
+  789  rails c rails_env=production
+  790  pwd
+  791  rails c
+  792  bundle exec cap production deploy
+  793  bundle exec cap production deploy
+  794  rails dbconsole
+  795  cd ..
+  796  ls
+  797  rails new kaohon -d postgresql　-j jquery
+  798  rails new kaohon -d postgresql -j jquery
+  799  ls
+  800  cd kaohon/
+  801  ls
+  802  git init
+  803  log
+  804  log show
+  805  history
+  806  history.txt << history
+  807  ls
+  808  history >> history.txt

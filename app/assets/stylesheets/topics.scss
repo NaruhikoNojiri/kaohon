@@ -1,0 +1,51 @@
+// Place all the styles related to the Topics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    width: auto;
+    background-color: #005FFF;
+    height: 54px;
+    color: white;
+}
+navbar-default {
+    border: 0;
+}
+.navbar {
+    background-color: transparent;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.navbar-brand {
+  margin: 0px;
+  border: 0px;
+}
+
+.navbar-nav {
+  background-color: transparent;
+}
+
+.kaohon_logo img{
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+    width: 100%;
+    background-color:#dddddd;
+    padding: 20px 0 10px 0;
+    color: black;
+    margin: auto;
+    font-size: 12px;
+    position: absolute;    //htmlタグを基準とした配置
+    bottom: 0;
+}
