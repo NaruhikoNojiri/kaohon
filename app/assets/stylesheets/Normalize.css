@@ -446,3 +446,10 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+ * Prevent uploaded images shown too large.
+ */
+img{
+  max-width: 100%;
+}
