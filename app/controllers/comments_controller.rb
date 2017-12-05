@@ -9,7 +9,10 @@ class CommentsController < ApplicationController
       if @comment.save
         format.js {render :index}
       else
-        format.html {render :new}
+        @topics = Topic.all
+        @comments = @topic.comments
+        # format.html {render "topics/show"}
+        format.js {render :new}
       end
     end
   end
@@ -31,7 +34,7 @@ class CommentsController < ApplicationController
   def destroy
     respond_to do |format|
       @comment.destroy
-      format.html {redirect_to topic_path(@topic), notice: "コメントを削除しました。"}
+      # format.html {redirect_to topic_path(@topic), notice: "コメントを削除しました。"}
       format.js {render :index}
     end
   end

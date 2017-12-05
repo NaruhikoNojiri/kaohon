@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   end
 
   resources :relationships, only: [:create,:destroy]
-  resources :conversations, only: [:index] do
+  resources :conversations, only: [:index, :create] do
       resources :messages, only: [:index, :create]
   end
 
@@ -14,7 +14,9 @@ Rails.application.routes.draw do
     registrations: "users/registrations",
     omniauth_callbacks: "users/omniauth_callbacks"
   }
-  
+
+  resources :users, only: [:index]
+
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end

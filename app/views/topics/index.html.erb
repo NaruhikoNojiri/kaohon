@@ -1,7 +1,17 @@
-<p id="notice"><%= notice %></p>
 <div class="container">
     <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
       <h1>トピック一覧画面</h1>
+      <p id="notice"><%= notice %></p>
+      <% if @topic.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= @topic.errors.count %>件のエラーがあります。</h2>
+          <ul>
+          <% @topic.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
       <%= form_for(@topic) do |f| %>
         <%= f.text_field :title, class: 'form-control'%><br>
         <%= f.text_field :content, class: 'form-control'%><br>

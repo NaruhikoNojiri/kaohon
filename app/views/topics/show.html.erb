@@ -5,11 +5,13 @@
       <h1>詳細画面</h1>
       <p><strong><%= @topic.title %></strong></p>
       <p><%= @topic.content %></p>
-      <p>コメント一覧</p>
+      <h2>コメント一覧</h2>
       <div id="comments_area">
         <%= render partial: 'comments/index', locals: { comments: @comments, topic: @topic } %>
       </div>
-      <%= render partial: 'comments/form', locals: { comment: @comment, topic: @topic } %>
+      <div id="form_area">
+        <%= render partial: 'comments/form', locals: { comment: @comment, topic: @topic } %>
+      </div>
       <%= link_to '戻る', topics_path %>
     </div>
   </div>

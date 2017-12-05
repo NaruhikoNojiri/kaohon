@@ -11,8 +11,9 @@ class TopicsController < ApplicationController
     @topic = Topic.new(topics_params)
     @topic.user_id = current_user.id
     if @topic.save
-      redirect_to root_path
+      redirect_to root_path, notice: "トピックを投稿しました！"
     else
+      @topics = Topic.all
       render :index
     end
   end

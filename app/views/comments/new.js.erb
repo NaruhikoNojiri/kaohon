@@ -1,4 +1,3 @@
-// エラーメッセージのリフレッシュのためにform部分を再描画
 $("#form_area").html("<%= j(render 'comments/form', { comment: @comment, topic: @topic }) %>")
 $("#comments_area").html("<%= j(render 'comments/index', { comments: @comment.topic.comments, topic: @comment.topic }) %>")
 $(':text').val('')

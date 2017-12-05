@@ -39,6 +39,21 @@ navbar-default {
   height: 30px;
 }
 
+ul li {
+  list-style: none;
+}
+
+.wrapper {
+  margin-bottom: 74px;
+  padding: 20px 20px 20px 35px;
+  .row {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+    word-wrap: break-word;
+  }
+}
+
 footer {
     width: 100%;
     background-color:#dddddd;

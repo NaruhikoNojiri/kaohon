@@ -1,2 +1,48 @@
-<h1>Messages#index</h1>
-<p>Find me in app/views/messages/index.html.erb</p>
+
+<% if @over_ten %>
+  <%= link_to '全てのメッセージを表示する', '?m=all' %>
+<% end %>
+
+<h2>会話一覧</h2>
+<p id="notice"><%= notice %></p>
+<!-- conversationコントローラーからリダイレクトした時にはflashを利用してエラーを表示。 -->
+<% if flash[:error].present? %>
+  <div id="error_explanation">
+    <h2><%= flash[:error].length %>件のエラーがあります。</h2>
+    <ul>
+    <% flash[:error].each do |e| %>
+      <li><%= e %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="ui segment">
+  <% @messages.each do |message| %>
+    <% if message.body %>
+      <% user = User.find(message.user_id) %>
+      <div class="item">
+        <div class="content">
+          <div class="header"><strong><%= user.name %></strong> <%= message.message_time %></div>
+          <div class="list">
+            <div class="item">
+              <i class="right triangle icon"></i>
+              <%= message.body %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+
+<%= form_for [@conversation, @message], html: {class: "ui reply form"} do |f| %>
+  <div class="field">
+    <%= f.text_area :body, class: "form-control" %>
+  </div>
+    <%= f.text_field :user_id, value: current_user.id, type: "hidden"  %>
+  <div>
+    <%= f.submit "メッセージを送る" %>
+  </div>
+
+<% end %>

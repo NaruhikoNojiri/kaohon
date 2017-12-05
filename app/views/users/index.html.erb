@@ -1,2 +1,17 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<div class="container">
+  <h1>ユーザー一覧</h1>
+  <% @users.each do |user| %>
+    <div class="container-child col-md-2 col-sm-4 col-xs-6 ">
+    <%= profile_img(user) %>
+    <% if user.id != current_user.id %>
+      <li>
+        <div class="item">
+          <%= link_to 'メッセージ', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post'%>
+        </div>
+        <%= user.email %>
+        <%= render 'follow_form', user: user %>
+      </li>
+    <% end %>
+  </div>
+  <% end %>
+</div>

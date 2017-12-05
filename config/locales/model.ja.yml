@@ -1,0 +1,39 @@
+ja:
+  activerecord:
+    models:
+      topic: "トピック"
+      user: "ユーザー"
+      comment: "コメント"
+      conversation: "会話"
+      message: "メッセージ"
+      relationship: "関係性"
+
+    attributes:
+      topic:
+        title: "タイトル"
+        content: "内容"
+      user:
+        title: "タイトル"
+        name: "名前"
+        email: "メールアドレス"
+        content: "内容"
+        current_password: "現在のパスワード"
+        password: "パスワード"
+        password_confirmation: "確認用パスワード"
+        remember_me: "ログインを記憶"
+        avatar: "プロフィール写真"
+      comment:
+        user_id: "ユーザーid"
+        topic_id: "トピックid"
+        content: "コメント内容"
+      conversation:
+        sender_id: "送信者id"
+        recipient_id: "受信者id"
+      message:
+        body: "メッセージ内容"
+        user_id: "ユーザーid"
+        conversation_id: "会話id"
+        content: "会話内容"
+      relationship:
+        sender_id: "送信者id"
+        recipient_id: "受信者id"
