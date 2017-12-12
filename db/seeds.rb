@@ -28,8 +28,7 @@ user2 = User.find(2)
 
 # topics
 3.times do |n|
-  topic = user1.topics.build(title: "サンプルタイトル#{n+1}",
-  content: "サンプルの投稿内容です。#{n+1}個目の投稿になります。")
+  topic = user1.topics.build(content: "サンプルの投稿内容です。#{n+1}個目の投稿になります。")
   topic.save!
 end
 

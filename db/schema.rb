@@ -63,7 +63,6 @@ ActiveRecord::Schema.define(version: 20171202032723) do
     t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "title"
   end
 
   add_index "topics", ["user_id"], name: "index_topics_on_user_id", using: :btree

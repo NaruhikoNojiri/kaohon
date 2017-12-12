@@ -11,6 +11,8 @@ class User < ActiveRecord::Base
   has_many :followers, through: :reverse_relationships, source: "follower", dependent: :destroy
   has_many :messages, dependent: :destroy
 
+  mount_uploader :avatar, AvatarUploader
+
   # method for facebook_login
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.find_by(provider: auth.provider, uid: auth.uid)
@@ -70,7 +72,7 @@ class User < ActiveRecord::Base
   def following?(other_user)
     relationships.find_by(followed_id: other_user.id)
   end
-  
+
   def unfollow!(other_user)
     relationships.find_by(followed_id: other_user.id).destroy
   end

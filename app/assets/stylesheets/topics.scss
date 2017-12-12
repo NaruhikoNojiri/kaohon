@@ -54,6 +54,29 @@ ul li {
   }
 }
 
+.new_topic {
+  border: 1px solid #ccc;
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .form-control {
+    width: 625px;
+    margin: 10px;
+  }
+  .btn {
+    margin: 10px;
+  }
+}
+
+.topic_input {
+  display:inline-flex;
+  border-bottom: 1px solid #ccc;
+}
+
 footer {
     width: 100%;
     background-color:#dddddd;
