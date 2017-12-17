@@ -1,0 +1,478 @@
+I, [2017-12-13T00:36:40.435444 #5584]  INFO -- : Refreshing Gem list
+I, [2017-12-13T00:36:42.782882 #5584]  INFO -- : listening on addr=/var/www/kaohon/current/tmp/sockets/unicorn.sock fd=8
+The PGconn, PGresult, and PGError constants are deprecated, and will be
+removed as of version 1.0.
+
+You should use PG::Connection, PG::Result, and PG::Error instead, respectively.
+
+Called from /var/www/kaohon/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in `load_dependency'
+I, [2017-12-13T00:36:42.794474 #5584]  INFO -- : master process ready
+I, [2017-12-13T00:36:42.802668 #5588]  INFO -- : worker=0 ready
+I, [2017-12-13T00:36:42.803770 #5590]  INFO -- : worker=1 ready
+I, [2017-12-13T00:36:43.035426 #5686]  INFO -- : executing ["/var/www/kaohon/shared/bundle/ruby/2.3.0/bin/unicorn", "-c", "/var/www/kaohon/current/config/unicorn/production.rb", "-E", "deployment", "-D", {8=>#<Kgio::UNIXServer:/var/www/kaohon/current/tmp/sockets/unicorn.sock>}] (in /var/www/kaohon/releases/20171212153607)
+I, [2017-12-13T00:36:43.035524 #5686]  INFO -- : forked child re-executing...
+I, [2017-12-13T00:36:43.317265 #5686]  INFO -- : inherited addr=/var/www/kaohon/current/tmp/sockets/unicorn.sock fd=8
+I, [2017-12-13T00:36:43.317470 #5686]  INFO -- : Refreshing Gem list
+The PGconn, PGresult, and PGError constants are deprecated, and will be
+removed as of version 1.0.
+
+You should use PG::Connection, PG::Result, and PG::Error instead, respectively.
+
+Called from /var/www/kaohon/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in `load_dependency'
+I, [2017-12-13T00:36:45.664156 #5686]  INFO -- : master process ready
+I, [2017-12-13T00:36:45.665521 #5691]  INFO -- : worker=0 ready
+I, [2017-12-13T00:36:45.668053 #5693]  INFO -- : worker=1 ready
+I, [2017-12-13T00:36:45.849348 #5584]  INFO -- : reaped #<Process::Status: pid 5588 exit 0> worker=0
+I, [2017-12-13T00:36:45.849455 #5584]  INFO -- : reaped #<Process::Status: pid 5590 exit 0> worker=1
+I, [2017-12-13T00:36:45.849487 #5584]  INFO -- : master complete
+202.177.68.248 - - [13/Dec/2017:00:39:18 +0900] "GET /404 HTTP/1.0" 404 509 0.0263
+202.177.68.248 - - [13/Dec/2017:00:39:22 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.4578
+202.177.68.248 - - [13/Dec/2017:00:39:22 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.4236
+104.236.151.13 - - [13/Dec/2017:05:14:06 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0057
+54.80.136.40 - - [13/Dec/2017:07:46:53 +0900] "HEAD /unauthenticated HTTP/1.0" 302 - 0.0034
+54.80.136.40 - - [13/Dec/2017:07:46:53 +0900] "GET /404 HTTP/1.0" 404 509 0.0022
+54.80.65.110 - - [13/Dec/2017:07:47:12 +0900] "HEAD /unauthenticated HTTP/1.0" 302 - 0.0033
+54.80.65.110 - - [13/Dec/2017:07:47:12 +0900] "GET /404 HTTP/1.0" 404 509 0.0023
+60.191.38.77 - - [13/Dec/2017:08:44:46 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0030
+209.126.136.4 - - [13/Dec/2017:13:21:57 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0030
+139.162.108.53 - - [13/Dec/2017:15:06:59 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0031
+139.162.108.53 - - [13/Dec/2017:15:06:59 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0066
+104.131.151.28 - - [13/Dec/2017:15:11:08 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0031
+104.236.175.186 - - [13/Dec/2017:18:18:26 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0030
+27.19.183.122 - - [13/Dec/2017:22:16:50 +0900] "GET /404 HTTP/1.0" 404 509 0.0022
+159.203.94.245 - - [13/Dec/2017:23:45:11 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0030
+159.203.94.245 - - [13/Dec/2017:23:45:11 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0063
+172.104.108.109 - - [14/Dec/2017:07:02:50 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0032
+115.231.218.76 - - [14/Dec/2017:17:51:58 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0033
+115.231.218.76 - - [14/Dec/2017:17:51:58 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0346
+115.231.218.76 - - [14/Dec/2017:17:51:58 +0900] "GET /404 HTTP/1.0" 404 509 0.0023
+141.212.122.64 - - [14/Dec/2017:18:20:26 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0031
+141.212.122.64 - - [14/Dec/2017:18:20:26 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0068
+104.236.156.213 - - [14/Dec/2017:22:50:14 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0030
+177.193.160.59 - - [15/Dec/2017:02:59:52 +0900] "GET /404 HTTP/1.0" 404 509 0.0023
+177.193.160.59 - - [15/Dec/2017:02:59:55 +0900] "GET /404 HTTP/1.0" 404 509 0.0024
+177.193.160.59 - - [15/Dec/2017:02:59:58 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0034
+177.193.160.59 - - [15/Dec/2017:03:00:01 +0900] "POST /404 HTTP/1.0" 404 509 0.0052
+219.133.31.126 - - [15/Dec/2017:10:29:35 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0037
+219.133.31.126 - - [15/Dec/2017:10:29:36 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0071
+219.133.31.126 - - [15/Dec/2017:10:29:36 +0900] "GET /404 HTTP/1.0" 404 509 0.0023
+139.162.119.197 - - [15/Dec/2017:10:32:54 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0031
+139.162.119.197 - - [15/Dec/2017:10:32:54 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0064
+185.110.132.232 - - [15/Dec/2017:15:54:22 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0031
+104.128.144.131 - - [15/Dec/2017:16:56:32 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0033
+104.128.144.131 - - [15/Dec/2017:16:56:32 +0900] "HEAD /404 HTTP/1.0" 404 509 0.0025
+23.225.168.14 - - [15/Dec/2017:20:29:26 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0035
+54.198.198.243 - - [16/Dec/2017:05:33:15 +0900] "HEAD /unauthenticated HTTP/1.0" 302 - 0.0039
+54.198.198.243 - - [16/Dec/2017:05:33:15 +0900] "GET /404 HTTP/1.0" 404 509 0.0023
+112.210.150.182 - - [16/Dec/2017:08:58:22 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0032
+172.104.108.109 - - [16/Dec/2017:18:00:46 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0034
+60.191.38.77 - - [16/Dec/2017:18:33:59 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0032
+52.23.151.216 - - [16/Dec/2017:22:09:58 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0031
+52.23.151.216 - - [16/Dec/2017:22:09:59 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0073
+71.6.202.198 - - [17/Dec/2017:01:28:11 +0900] "GET /404 HTTP/1.0" 404 509 0.0023
+58.218.213.120 - - [17/Dec/2017:05:33:57 +0900] "GET /404 HTTP/1.0" 404 509 0.0023
+58.218.213.120 - - [17/Dec/2017:05:34:25 +0900] "GET /404 HTTP/1.0" 404 509 0.0022
+139.162.114.70 - - [17/Dec/2017:07:37:51 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0031
+139.162.114.70 - - [17/Dec/2017:07:37:51 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0065
+58.218.213.120 - - [17/Dec/2017:12:23:26 +0900] "GET /404 HTTP/1.0" 404 509 0.0024
+128.136.35.30 - - [17/Dec/2017:12:27:05 +0900] "GET /404 HTTP/1.0" 404 509 0.0023
+128.136.35.30 - - [17/Dec/2017:12:27:06 +0900] "GET /404 HTTP/1.0" 404 509 0.0023
+128.136.35.30 - - [17/Dec/2017:12:27:06 +0900] "GET /404 HTTP/1.0" 404 509 0.0023
+128.136.35.30 - - [17/Dec/2017:12:27:06 +0900] "GET /404 HTTP/1.0" 404 509 0.0022
+128.136.35.30 - - [17/Dec/2017:12:27:07 +0900] "GET /404 HTTP/1.0" 404 509 0.0022
+128.136.35.30 - - [17/Dec/2017:12:27:07 +0900] "GET /404 HTTP/1.0" 404 509 0.0022
+202.177.68.248 - - [17/Dec/2017:15:46:28 +0900] "GET %2Ffavicon.ico HTTP/1.0" 200 - 0.0005
+202.177.68.248 - - [17/Dec/2017:15:46:36 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0034
+202.177.68.248 - - [17/Dec/2017:15:46:36 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0071
+I, [2017-12-17T15:46:44.875563 #5691]  INFO -- omniauth: (facebook) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:15:46:44 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0082
+I, [2017-12-17T15:46:45.139719 #5693]  INFO -- omniauth: (facebook) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:15:46:45 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0071
+69.171.225.79 - - [17/Dec/2017:15:49:11 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0041
+66.220.146.210 - - [17/Dec/2017:15:49:11 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0077
+173.252.85.209 - - [17/Dec/2017:15:49:13 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0033
+173.252.86.196 - - [17/Dec/2017:15:49:13 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0066
+I, [2017-12-17T15:49:21.047860 #5693]  INFO -- omniauth: (facebook) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:15:49:21 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0032
+I, [2017-12-17T15:49:21.316429 #5691]  INFO -- omniauth: (facebook) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:15:49:21 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0031
+I, [2017-12-17T15:49:47.307549 #5691]  INFO -- omniauth: (facebook) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:15:49:47 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0032
+I, [2017-12-17T15:49:47.483438 #5693]  INFO -- omniauth: (facebook) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:15:49:47 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0034
+I, [2017-12-17T15:49:47.712848 #5691]  INFO -- omniauth: (facebook) Callback phase initiated.
+202.177.68.248 - - [17/Dec/2017:15:49:48 +0900] "GET /users/auth/facebook/callback?code=AQD9XdNCPd5xgbUJnU6xhamfvSExTA_pYPri8R8oy2dQmhRfMyozfzdHCnjqjwyMIeITPf53MqwwVVzc03tCz7je0MWxuKj-xGdWnni8dVqeerRztIDG8j-CIDcBSDx-NPkzGXWso6wyoA9Sobh7qI0G335_j7pxXWFQA_f4YQO0VPTWZZ6P1n8bM8quk9yKK4pn-NQNx10tIK1LOPUhzanDcAMFV4eY0-dxMU3SAIkTStwITqahMD59se2hoPXunm6dXIFoOWWlOHbHPTt_y2YnQPnt_jWcq9LHjBRXCL7X8f6P1p6OVXTM-pKulgUdXaiptiuGaIAEw9E4oTNOSKzE&state=6b8f63888bfc40df21b3a9502b5559553fff20c8734168b8 HTTP/1.0" 302 - 0.4695
+202.177.68.248 - - [17/Dec/2017:15:49:48 +0900] "GET /topics HTTP/1.0" 200 - 0.0296
+202.177.68.248 - - [17/Dec/2017:15:50:05 +0900] "DELETE /users/sign_out HTTP/1.0" 302 - 0.0106
+202.177.68.248 - - [17/Dec/2017:15:50:05 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0039
+202.177.68.248 - - [17/Dec/2017:15:50:05 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0072
+I, [2017-12-17T15:50:06.882980 #5693]  INFO -- omniauth: (twitter) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:15:50:07 +0900] "GET /users/auth/twitter HTTP/1.0" 302 100 0.2138
+I, [2017-12-17T15:50:07.153820 #5691]  INFO -- omniauth: (twitter) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:15:50:07 +0900] "GET /users/auth/twitter HTTP/1.0" 302 100 0.2015
+I, [2017-12-17T15:50:08.028318 #5693]  INFO -- omniauth: (twitter) Callback phase initiated.
+202.177.68.248 - - [17/Dec/2017:15:50:08 +0900] "GET /users/auth/twitter/callback?oauth_token=VyaaxgAAAAAA3UkbAAABYGM8pgg&oauth_verifier=wqCCW6YdHPfkL84r9BFYzNMszlvsOp4u HTTP/1.0" 302 - 0.7865
+202.177.68.248 - - [17/Dec/2017:15:50:08 +0900] "GET / HTTP/1.0" 200 - 0.0159
+202.177.68.248 - - [17/Dec/2017:15:50:12 +0900] "GET /users HTTP/1.0" 200 - 0.0304
+202.177.68.248 - - [17/Dec/2017:15:50:15 +0900] "GET / HTTP/1.0" 200 - 0.0070
+I, [2017-12-17T15:51:53.602145 #13647]  INFO -- : executing ["/var/www/kaohon/shared/bundle/ruby/2.3.0/bin/unicorn", "-c", "/var/www/kaohon/current/config/unicorn/production.rb", "-E", "deployment", "-D", {8=>#<Kgio::UNIXServer:fd 8>}] (in /var/www/kaohon/releases/20171217065122)
+I, [2017-12-17T15:51:53.602571 #13647]  INFO -- : forked child re-executing...
+I, [2017-12-17T15:51:53.892644 #13647]  INFO -- : inherited addr=/var/www/kaohon/current/tmp/sockets/unicorn.sock fd=8
+I, [2017-12-17T15:51:53.892832 #13647]  INFO -- : Refreshing Gem list
+The PGconn, PGresult, and PGError constants are deprecated, and will be
+removed as of version 1.0.
+
+You should use PG::Connection, PG::Result, and PG::Error instead, respectively.
+
+Called from /var/www/kaohon/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in `load_dependency'
+I, [2017-12-17T15:51:56.308398 #13647]  INFO -- : master process ready
+I, [2017-12-17T15:51:56.309778 #13652]  INFO -- : worker=0 ready
+I, [2017-12-17T15:51:56.310861 #13654]  INFO -- : worker=1 ready
+I, [2017-12-17T15:51:56.490525 #5686]  INFO -- : reaped #<Process::Status: pid 5691 exit 0> worker=0
+I, [2017-12-17T15:51:56.490720 #5686]  INFO -- : reaped #<Process::Status: pid 5693 exit 0> worker=1
+I, [2017-12-17T15:51:56.490753 #5686]  INFO -- : master complete
+202.177.68.248 - - [17/Dec/2017:15:52:10 +0900] "DELETE /users/sign_out HTTP/1.0" 302 - 0.4763
+202.177.68.248 - - [17/Dec/2017:15:52:10 +0900] "GET / HTTP/1.0" 200 - 0.0443
+202.177.68.248 - - [17/Dec/2017:15:52:21 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0116
+202.177.68.248 - - [17/Dec/2017:15:52:21 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.3967
+I, [2017-12-17T15:52:23.521061 #13654]  INFO -- omniauth: (facebook) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:15:52:23 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0071
+I, [2017-12-17T15:52:23.714458 #13652]  INFO -- omniauth: (facebook) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:15:52:23 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0073
+I, [2017-12-17T15:52:23.880738 #13654]  INFO -- omniauth: (facebook) Callback phase initiated.
+202.177.68.248 - - [17/Dec/2017:15:52:24 +0900] "GET /users/auth/facebook/callback?code=AQC0D_J3kKXJgYiVAtlpZzk1nc2ahSL7vn7pjY550PKp5sPXu6S8UrrF7DV40PmvMnenVhI5c9dhbIgwkixG-izXkzKqf5cz5mwim40S67kkLwDNI-g7SsoW6ZJx2nxjGgJWwixuhXtrHjveXmbaO4NsSSq6Ag_xJOM-ANaJ-ATvHWi4Nn4U1fcYDUFDW2ivO8EjxoPh9chSJgxA8wcFvlXF0woQZt1k0MUmW9OJU0jfFzYIncBoJAnTP2ahMKfeGkjZAVUNi4ee3npJJWsx4TWVnXXDeEVfXonnhsJxTrhA6i2YD5y8j8FWkDV6NuwbeGPSruUzLLrhYNlvP9zbWj8y&state=98a078fc3c932f186e52d2b2ac65096899e619afb9f246cb HTTP/1.0" 302 - 0.3272
+202.177.68.248 - - [17/Dec/2017:15:52:24 +0900] "GET /topics HTTP/1.0" 200 - 0.0215
+202.177.68.248 - - [17/Dec/2017:15:52:31 +0900] "GET /users HTTP/1.0" 200 - 0.0306
+202.177.68.248 - - [17/Dec/2017:15:52:37 +0900] "POST /conversations?recipient_id=2&sender_id=1 HTTP/1.0" 302 - 0.0203
+202.177.68.248 - - [17/Dec/2017:15:52:37 +0900] "GET /conversations/1/messages HTTP/1.0" 200 - 0.0285
+202.177.68.248 - - [17/Dec/2017:15:52:39 +0900] "POST /conversations/1/messages HTTP/1.0" 302 - 0.0281
+202.177.68.248 - - [17/Dec/2017:15:52:39 +0900] "GET /conversations/1/messages HTTP/1.0" 200 - 0.0095
+202.177.68.248 - - [17/Dec/2017:15:52:44 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0161
+202.177.68.248 - - [17/Dec/2017:15:52:45 +0900] "GET / HTTP/1.0" 200 - 0.0062
+202.177.68.248 - - [17/Dec/2017:15:52:47 +0900] "GET /topics HTTP/1.0" 200 - 0.0161
+202.177.68.248 - - [17/Dec/2017:15:52:54 +0900] "POST /topics HTTP/1.0" 302 - 0.0074
+202.177.68.248 - - [17/Dec/2017:15:52:54 +0900] "GET /topics HTTP/1.0" 200 - 0.0088
+202.177.68.248 - - [17/Dec/2017:16:01:50 +0900] "GET /topics HTTP/1.0" 200 - 0.0077
+202.177.68.248 - - [17/Dec/2017:16:01:53 +0900] "GET / HTTP/1.0" 200 - 0.0055
+126.161.145.14 - - [17/Dec/2017:16:29:03 +0900] "GET / HTTP/1.0" 200 - 0.0094
+126.161.145.14 - - [17/Dec/2017:16:29:03 +0900] "GET %2Ffavicon.ico HTTP/1.0" 200 - 0.0005
+126.161.145.14 - - [17/Dec/2017:16:30:42 +0900] "GET /users/sign_up HTTP/1.0" 200 - 0.0143
+I, [2017-12-17T16:30:44.713931 #13654]  INFO -- omniauth: (twitter) Request phase initiated.
+126.161.145.14 - - [17/Dec/2017:16:30:44 +0900] "GET /users/auth/twitter HTTP/1.0" 302 100 0.2057
+I, [2017-12-17T16:30:45.274207 #13652]  INFO -- omniauth: (twitter) Request phase initiated.
+126.161.145.14 - - [17/Dec/2017:16:30:45 +0900] "GET /users/auth/twitter HTTP/1.0" 302 100 0.2125
+I, [2017-12-17T16:30:48.743307 #13654]  INFO -- omniauth: (twitter) Callback phase initiated.
+126.161.145.14 - - [17/Dec/2017:16:30:49 +0900] "GET /users/auth/twitter/callback?oauth_token=YpYv6wAAAAAA3UkbAAABYGNh2fo&oauth_verifier=Hp36pHwjzHzsyBOUTFCPfXTyeQUjtdbs HTTP/1.0" 302 - 0.7211
+126.161.145.14 - - [17/Dec/2017:16:30:49 +0900] "GET / HTTP/1.0" 200 - 0.0057
+126.161.145.14 - - [17/Dec/2017:16:30:55 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0074
+126.161.145.14 - - [17/Dec/2017:16:30:58 +0900] "DELETE /users HTTP/1.0" 302 - 0.0282
+126.161.145.14 - - [17/Dec/2017:16:30:58 +0900] "GET / HTTP/1.0" 200 - 0.0046
+126.161.145.14 - - [17/Dec/2017:16:31:00 +0900] "GET /users/sign_up HTTP/1.0" 200 - 0.0070
+I, [2017-12-17T16:31:02.057649 #13654]  INFO -- omniauth: (facebook) Request phase initiated.
+126.161.145.14 - - [17/Dec/2017:16:31:02 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0030
+I, [2017-12-17T16:31:02.462663 #13652]  INFO -- omniauth: (facebook) Request phase initiated.
+126.161.145.14 - - [17/Dec/2017:16:31:02 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0034
+I, [2017-12-17T16:31:05.633989 #13654]  INFO -- omniauth: (facebook) Callback phase initiated.
+126.161.145.14 - - [17/Dec/2017:16:31:06 +0900] "GET /users/auth/facebook/callback?code=AQBJtJDdUCdhxnjp1bNoruBmxwl6orbbi8jGJh8zUxIiojoKHasazn8o0e1lB6get2_I0Xh3pr6vcsWgz2TtdTnQ27WDYkg8e5SE8QJTSgDLs30OLcSWCPRH3JI1uowPoOZj03P6upTvdcrRUISNXFY9U-PmZNl8Q9aK8yETS-6s03LexY_9Qw40UdFraGIH1hbtSmR1bn9m5-MI1IpQbUFCivfk-_iwpRJJOTYDdr_At5aetSYUZSkfeUUfnsqNjDG-YEyIBawYm8ym4IyoNSiZ9NQMTDq0VtwudWYeDGl_vZQDhrnWUnRpbf_rBZ2LdII-ylpZAiTDGbnXMleJcCrV&state=675a3e60abfd897b032b83d40fff679f19395b7d01e75755 HTTP/1.0" 302 - 1.0506
+126.161.145.14 - - [17/Dec/2017:16:31:06 +0900] "GET / HTTP/1.0" 200 - 0.0056
+126.161.145.14 - - [17/Dec/2017:16:31:08 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0072
+126.161.145.14 - - [17/Dec/2017:16:31:11 +0900] "DELETE /users HTTP/1.0" 302 - 0.0234
+126.161.145.14 - - [17/Dec/2017:16:31:11 +0900] "GET / HTTP/1.0" 200 - 0.0119
+126.161.145.14 - - [17/Dec/2017:16:31:12 +0900] "GET /users/sign_up HTTP/1.0" 200 - 0.0099
+126.161.145.14 - - [17/Dec/2017:16:31:32 +0900] "POST /users HTTP/1.0" 302 - 1.1938
+126.161.145.14 - - [17/Dec/2017:16:31:32 +0900] "GET / HTTP/1.0" 200 - 0.0047
+126.161.145.14 - - [17/Dec/2017:16:35:44 +0900] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0003
+126.161.145.14 - - [17/Dec/2017:16:35:44 +0900] "GET /users/sign_up HTTP/1.0" 200 - 0.0065
+I, [2017-12-17T16:35:46.063775 #13654]  INFO -- omniauth: (twitter) Request phase initiated.
+126.161.145.14 - - [17/Dec/2017:16:35:46 +0900] "GET /users/auth/twitter HTTP/1.0" 302 100 0.2138
+I, [2017-12-17T16:35:46.428380 #13652]  INFO -- omniauth: (twitter) Request phase initiated.
+126.161.145.14 - - [17/Dec/2017:16:35:46 +0900] "GET /users/auth/twitter HTTP/1.0" 302 100 0.2071
+I, [2017-12-17T16:35:47.474434 #13654]  INFO -- omniauth: (twitter) Callback phase initiated.
+126.161.145.14 - - [17/Dec/2017:16:35:48 +0900] "GET /users/auth/twitter/callback?oauth_token=6MaYVAAAAAAA3UkbAAABYGNmclQ&oauth_verifier=r2wAgREdzJZS4VAGT38NBUZ6dj39rVNn HTTP/1.0" 302 - 0.7730
+126.161.145.14 - - [17/Dec/2017:16:35:48 +0900] "GET / HTTP/1.0" 200 - 0.0052
+126.161.145.14 - - [17/Dec/2017:16:35:50 +0900] "GET /topics HTTP/1.0" 200 - 0.0084
+126.161.145.14 - - [17/Dec/2017:16:35:55 +0900] "POST /topics HTTP/1.0" 302 - 0.0072
+126.161.145.14 - - [17/Dec/2017:16:35:55 +0900] "GET /topics HTTP/1.0" 200 - 0.0086
+126.161.145.14 - - [17/Dec/2017:16:36:05 +0900] "DELETE /topics/2 HTTP/1.0" 302 - 0.0086
+126.161.145.14 - - [17/Dec/2017:16:36:05 +0900] "GET /topics HTTP/1.0" 200 - 0.0074
+126.161.145.14 - - [17/Dec/2017:16:36:08 +0900] "POST /topics HTTP/1.0" 302 - 0.0069
+126.161.145.14 - - [17/Dec/2017:16:36:08 +0900] "GET /topics HTTP/1.0" 200 - 0.0087
+126.161.145.14 - - [17/Dec/2017:16:36:10 +0900] "GET /topics/3/edit HTTP/1.0" 200 - 0.0076
+126.161.145.14 - - [17/Dec/2017:16:36:12 +0900] "PATCH /topics/3 HTTP/1.0" 302 - 0.0080
+126.161.145.14 - - [17/Dec/2017:16:36:13 +0900] "GET /topics HTTP/1.0" 200 - 0.0088
+126.161.145.14 - - [17/Dec/2017:16:36:16 +0900] "GET /topics/3 HTTP/1.0" 200 - 0.0167
+126.161.145.14 - - [17/Dec/2017:16:36:17 +0900] "GET /topics HTTP/1.0" 200 - 0.0089
+126.161.145.14 - - [17/Dec/2017:16:36:27 +0900] "DELETE /topics/3 HTTP/1.0" 302 - 0.0070
+126.161.145.14 - - [17/Dec/2017:16:36:27 +0900] "GET /topics HTTP/1.0" 200 - 0.0079
+164.132.91.1 - - [17/Dec/2017:16:37:12 +0900] "GET / HTTP/1.0" 200 - 0.0044
+126.161.145.14 - - [17/Dec/2017:16:37:33 +0900] "GET / HTTP/1.0" 200 - 0.0042
+126.161.145.14 - - [17/Dec/2017:16:37:33 +0900] "GET %2Ffavicon.ico HTTP/1.0" 200 - 0.0005
+126.161.145.14 - - [17/Dec/2017:16:37:37 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.0040
+126.161.145.14 - - [17/Dec/2017:16:37:37 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0066
+I, [2017-12-17T16:37:38.823591 #13654]  INFO -- omniauth: (facebook) Request phase initiated.
+126.161.145.14 - - [17/Dec/2017:16:37:38 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0030
+I, [2017-12-17T16:37:39.342854 #13654]  INFO -- omniauth: (facebook) Request phase initiated.
+126.161.145.14 - - [17/Dec/2017:16:37:39 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0031
+I, [2017-12-17T16:37:43.474014 #13654]  INFO -- omniauth: (facebook) Callback phase initiated.
+126.161.145.14 - - [17/Dec/2017:16:37:44 +0900] "GET /users/auth/facebook/callback?code=AQBSeKYvCYFoN0LctVSJPHvzHgJOFkwL9CncTuMsOC0PveAtvbzIKx6c5YU_auM__Xa95Vfhky46XmIss1jCCjONPh8qp2WitGLCCyPiaiUMbPmKq3Kv5SSuq8R_qV9KRuo2y8W1Dt3cSq_B3hj1AFLGQuqFeFWO_l-OJrhw_ugedIoTGy-6v56dMw4q3ttWX_tacyTZjeF2IfLOmwyEFUkFwZQHuzQ4o8oX2FInGXFaFIjWQ6Y7uDdC8HxTDZJJDfxE0y9x4Ew_toyvGrK6r5U9CnEtTf2g6GzzuMAXk-dtaBMxn5-zZn_5THATR5Iix0kP9KVN_bElB0qiA4_n2Cvy&state=86592181e94a1cbc4a7ac56098052280b0b3cc83763078bb HTTP/1.0" 302 - 1.0100
+126.161.145.14 - - [17/Dec/2017:16:37:44 +0900] "GET /topics HTTP/1.0" 200 - 0.0078
+126.161.145.14 - - [17/Dec/2017:16:37:55 +0900] "POST /topics HTTP/1.0" 302 - 0.0079
+126.161.145.14 - - [17/Dec/2017:16:37:55 +0900] "GET /topics HTTP/1.0" 200 - 0.0088
+126.161.145.14 - - [17/Dec/2017:16:38:00 +0900] "GET /topics HTTP/1.0" 200 - 0.0089
+126.161.145.14 - - [17/Dec/2017:16:38:04 +0900] "DELETE /topics/4 HTTP/1.0" 302 - 0.0068
+126.161.145.14 - - [17/Dec/2017:16:38:04 +0900] "GET /topics HTTP/1.0" 200 - 0.0074
+126.161.145.14 - - [17/Dec/2017:16:38:12 +0900] "GET /topics HTTP/1.0" 200 - 0.0076
+126.161.145.14 - - [17/Dec/2017:16:38:13 +0900] "GET %2Ffavicon.ico HTTP/1.0" 200 - 0.0003
+126.161.145.14 - - [17/Dec/2017:16:38:16 +0900] "POST /topics HTTP/1.0" 302 - 0.0071
+126.161.145.14 - - [17/Dec/2017:16:38:16 +0900] "GET /topics HTTP/1.0" 200 - 0.0085
+126.161.145.14 - - [17/Dec/2017:16:38:20 +0900] "GET /topics HTTP/1.0" 200 - 0.0087
+126.161.145.14 - - [17/Dec/2017:16:38:25 +0900] "GET /topics/5 HTTP/1.0" 200 - 0.0168
+126.161.145.14 - - [17/Dec/2017:16:38:31 +0900] "POST /topics/5/comments HTTP/1.0" 200 - 0.0226
+126.161.145.14 - - [17/Dec/2017:16:38:39 +0900] "GET /topics HTTP/1.0" 200 - 0.0089
+126.161.145.14 - - [17/Dec/2017:16:38:39 +0900] "GET %2Ffavicon.ico HTTP/1.0" 200 - 0.0004
+126.161.145.14 - - [17/Dec/2017:16:38:44 +0900] "GET /conversations HTTP/1.0" 200 - 0.0122
+126.161.145.14 - - [17/Dec/2017:16:38:50 +0900] "GET /topics HTTP/1.0" 200 - 0.0086
+126.161.145.14 - - [17/Dec/2017:16:38:52 +0900] "GET /topics/5 HTTP/1.0" 200 - 0.0099
+126.161.145.14 - - [17/Dec/2017:16:39:00 +0900] "POST /topics/5/comments HTTP/1.0" 200 - 0.0235
+126.161.145.14 - - [17/Dec/2017:16:39:04 +0900] "GET /topics/5/comments/2/edit HTTP/1.0" 200 - 0.0097
+126.161.145.14 - - [17/Dec/2017:16:39:08 +0900] "PATCH /topics/5/comments/2 HTTP/1.0" 302 - 0.0092
+126.161.145.14 - - [17/Dec/2017:16:39:08 +0900] "GET /topics/5 HTTP/1.0" 200 - 0.0103
+126.161.145.14 - - [17/Dec/2017:16:39:11 +0900] "DELETE /topics/5/comments/2 HTTP/1.0" 200 - 0.0103
+126.161.145.14 - - [17/Dec/2017:16:39:35 +0900] "GET /users HTTP/1.0" 200 - 0.0132
+126.161.145.14 - - [17/Dec/2017:16:40:59 +0900] "GET /404 HTTP/1.0" 404 509 0.0028
+126.161.145.14 - - [17/Dec/2017:16:41:06 +0900] "GET /topics HTTP/1.0" 200 - 0.0085
+126.161.145.14 - - [17/Dec/2017:16:41:08 +0900] "POST /topics HTTP/1.0" 200 - 0.0133
+126.161.145.14 - - [17/Dec/2017:16:41:25 +0900] "GET /users HTTP/1.0" 200 - 0.0142
+126.161.145.14 - - [17/Dec/2017:16:46:30 +0900] "GET %2Ffavicon.ico HTTP/1.0" 304 - 0.0002
+126.161.145.14 - - [17/Dec/2017:16:46:30 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0125
+126.161.145.14 - - [17/Dec/2017:16:46:38 +0900] "PUT /users HTTP/1.0" 302 - 0.1524
+126.161.145.14 - - [17/Dec/2017:16:46:38 +0900] "GET / HTTP/1.0" 200 - 0.0054
+126.161.145.14 - - [17/Dec/2017:16:46:42 +0900] "GET /topics HTTP/1.0" 200 - 0.0093
+126.161.145.14 - - [17/Dec/2017:16:46:45 +0900] "GET /users HTTP/1.0" 200 - 0.0216
+126.161.145.14 - - [17/Dec/2017:16:46:56 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0073
+126.161.145.14 - - [17/Dec/2017:16:47:08 +0900] "GET /users HTTP/1.0" 200 - 0.0119
+126.161.145.14 - - [17/Dec/2017:16:47:21 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0087
+126.161.145.14 - - [17/Dec/2017:16:47:25 +0900] "DELETE /users HTTP/1.0" 302 - 0.0117
+126.161.145.14 - - [17/Dec/2017:16:47:25 +0900] "GET / HTTP/1.0" 200 - 0.0058
+126.161.145.14 - - [17/Dec/2017:16:47:31 +0900] "GET /users HTTP/1.0" 200 - 0.0105
+126.161.145.14 - - [17/Dec/2017:16:47:31 +0900] "GET %2Ffavicon.ico HTTP/1.0" 200 - 0.0004
+126.161.145.14 - - [17/Dec/2017:16:47:39 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0069
+126.161.145.14 - - [17/Dec/2017:16:47:52 +0900] "PUT /users HTTP/1.0" 302 - 0.2031
+126.161.145.14 - - [17/Dec/2017:16:47:52 +0900] "GET / HTTP/1.0" 200 - 0.0056
+126.161.145.14 - - [17/Dec/2017:16:47:56 +0900] "GET /users HTTP/1.0" 200 - 0.0104
+126.161.145.14 - - [17/Dec/2017:16:48:37 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0087
+126.161.145.14 - - [17/Dec/2017:16:51:22 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0074
+126.161.145.14 - - [17/Dec/2017:16:51:24 +0900] "DELETE /users HTTP/1.0" 302 - 0.0741
+126.161.145.14 - - [17/Dec/2017:16:51:24 +0900] "GET / HTTP/1.0" 200 - 0.0045
+115.160.171.42 - - [17/Dec/2017:19:55:41 +0900] "GET /404 HTTP/1.0" 404 509 0.0022
+202.177.68.248 - - [17/Dec/2017:21:53:35 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0064
+202.177.68.248 - - [17/Dec/2017:21:53:43 +0900] "PUT /users HTTP/1.0" 302 - 0.1043
+202.177.68.248 - - [17/Dec/2017:21:53:43 +0900] "GET / HTTP/1.0" 200 - 0.0051
+202.177.68.248 - - [17/Dec/2017:21:53:45 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0073
+202.177.68.248 - - [17/Dec/2017:21:54:09 +0900] "GET /users HTTP/1.0" 200 - 0.0135
+202.177.68.248 - - [17/Dec/2017:21:54:16 +0900] "GET / HTTP/1.0" 200 - 0.0049
+202.177.68.248 - - [17/Dec/2017:21:54:19 +0900] "GET /conversations HTTP/1.0" 200 - 0.0141
+202.177.68.248 - - [17/Dec/2017:21:54:21 +0900] "GET /conversations/1/messages HTTP/1.0" 200 - 0.0143
+202.177.68.248 - - [17/Dec/2017:21:54:27 +0900] "GET / HTTP/1.0" 200 - 0.0053
+202.177.68.248 - - [17/Dec/2017:21:54:28 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0078
+I, [2017-12-17T22:14:34.221308 #19327]  INFO -- : executing ["/var/www/kaohon/shared/bundle/ruby/2.3.0/bin/unicorn", "-c", "/var/www/kaohon/current/config/unicorn/production.rb", "-E", "deployment", "-D", {8=>#<Kgio::UNIXServer:fd 8>}] (in /var/www/kaohon/releases/20171217131421)
+I, [2017-12-17T22:14:34.221396 #19327]  INFO -- : forked child re-executing...
+I, [2017-12-17T22:14:34.506474 #19327]  INFO -- : inherited addr=/var/www/kaohon/current/tmp/sockets/unicorn.sock fd=8
+I, [2017-12-17T22:14:34.506714 #19327]  INFO -- : Refreshing Gem list
+The PGconn, PGresult, and PGError constants are deprecated, and will be
+removed as of version 1.0.
+
+You should use PG::Connection, PG::Result, and PG::Error instead, respectively.
+
+Called from /var/www/kaohon/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in `load_dependency'
+I, [2017-12-17T22:14:36.856408 #19327]  INFO -- : master process ready
+I, [2017-12-17T22:14:36.857880 #19332]  INFO -- : worker=0 ready
+I, [2017-12-17T22:14:36.858959 #19334]  INFO -- : worker=1 ready
+I, [2017-12-17T22:14:37.038207 #13647]  INFO -- : reaped #<Process::Status: pid 13652 exit 0> worker=0
+I, [2017-12-17T22:14:37.038302 #13647]  INFO -- : reaped #<Process::Status: pid 13654 exit 0> worker=1
+I, [2017-12-17T22:14:37.038330 #13647]  INFO -- : master complete
+202.177.68.248 - - [17/Dec/2017:22:15:38 +0900] "GET /users HTTP/1.0" 200 - 0.1174
+202.177.68.248 - - [17/Dec/2017:22:16:06 +0900] "GET /topics HTTP/1.0" 200 - 0.0304
+202.177.68.248 - - [17/Dec/2017:22:17:05 +0900] "GET /conversations HTTP/1.0" 200 - 0.0730
+202.177.68.248 - - [17/Dec/2017:22:17:07 +0900] "GET /conversations/1/messages HTTP/1.0" 200 - 0.0303
+202.177.68.248 - - [17/Dec/2017:22:30:10 +0900] "GET /unauthenticated HTTP/1.0" 302 - 0.3674
+202.177.68.248 - - [17/Dec/2017:22:30:11 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.3861
+I, [2017-12-17T22:30:15.935693 #19332]  INFO -- omniauth: (facebook) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:22:30:15 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0070
+I, [2017-12-17T22:30:16.140785 #19334]  INFO -- omniauth: (facebook) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:22:30:16 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0070
+I, [2017-12-17T22:30:16.355780 #19332]  INFO -- omniauth: (facebook) Callback phase initiated.
+202.177.68.248 - - [17/Dec/2017:22:30:16 +0900] "GET /users/auth/facebook/callback?code=AQD7LifAuqAzXPsblDXxesOrghpRF018OtUfuSHREuOVglbrDm0WkOPhaZXBd9L6OStjGJWZvnlxSO4rymtW-SsE6YiqiYFrDaFISdP-Fte-Vi5ua9tUVt7RfnRDo68kQmleyTVUF5acEajv8ZSu_tg7G8Clq5CZN021OXWhU71h6USvkLmcPZrMU6oTmBZk1PyMm8BieBu6pOSroBtAz0bA3xj0UaWABnwZFTpdL8vpO77c4qHM9CXfGpmIm527eSjKdiLQrSzCG9-AsOP7QUnAXq9iFejjboRvO7oZtr28bTveryy5E9XteXXGeU-stl052E8RN4cqtUiBH5nbIPZK&state=3d827b9b8d4e5f556ca9e88931de944152988ca2585afdf7 HTTP/1.0" 302 - 0.4508
+202.177.68.248 - - [17/Dec/2017:22:30:16 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0154
+202.177.68.248 - - [17/Dec/2017:22:30:20 +0900] "GET /users HTTP/1.0" 200 - 0.0225
+202.177.68.248 - - [17/Dec/2017:22:31:21 +0900] "DELETE /users/sign_out HTTP/1.0" 302 - 0.0107
+202.177.68.248 - - [17/Dec/2017:22:31:21 +0900] "GET / HTTP/1.0" 200 - 0.0100
+202.177.68.248 - - [17/Dec/2017:22:31:24 +0900] "GET /users/sign_up HTTP/1.0" 200 - 0.0238
+202.177.68.248 - - [17/Dec/2017:23:01:02 +0900] "GET / HTTP/1.0" 200 - 0.0045
+202.177.68.248 - - [17/Dec/2017:23:01:05 +0900] "GET /users/sign_up HTTP/1.0" 200 - 0.0083
+I, [2017-12-17T23:02:00.836042 #23484]  INFO -- : executing ["/var/www/kaohon/shared/bundle/ruby/2.3.0/bin/unicorn", "-c", "/var/www/kaohon/current/config/unicorn/production.rb", "-E", "deployment", "-D", {8=>#<Kgio::UNIXServer:fd 8>}] (in /var/www/kaohon/releases/20171217140145)
+I, [2017-12-17T23:02:00.836138 #23484]  INFO -- : forked child re-executing...
+I, [2017-12-17T23:02:01.124764 #23484]  INFO -- : inherited addr=/var/www/kaohon/current/tmp/sockets/unicorn.sock fd=8
+I, [2017-12-17T23:02:01.124983 #23484]  INFO -- : Refreshing Gem list
+The PGconn, PGresult, and PGError constants are deprecated, and will be
+removed as of version 1.0.
+
+You should use PG::Connection, PG::Result, and PG::Error instead, respectively.
+
+Called from /var/www/kaohon/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in `load_dependency'
+I, [2017-12-17T23:02:03.516073 #23484]  INFO -- : master process ready
+I, [2017-12-17T23:02:03.517388 #23489]  INFO -- : worker=0 ready
+I, [2017-12-17T23:02:03.520049 #23491]  INFO -- : worker=1 ready
+I, [2017-12-17T23:02:03.601306 #19327]  INFO -- : reaped #<Process::Status: pid 19334 exit 0> worker=1
+I, [2017-12-17T23:02:03.701688 #19327]  INFO -- : reaped #<Process::Status: pid 19332 exit 0> worker=0
+I, [2017-12-17T23:02:03.701769 #19327]  INFO -- : master complete
+202.177.68.248 - - [17/Dec/2017:23:02:38 +0900] "GET /users/sign_up HTTP/1.0" 200 - 0.0716
+202.177.68.248 - - [17/Dec/2017:23:03:03 +0900] "POST /users HTTP/1.0" 302 - 1.5707
+202.177.68.248 - - [17/Dec/2017:23:03:03 +0900] "GET / HTTP/1.0" 200 - 0.0434
+202.177.68.248 - - [17/Dec/2017:23:16:07 +0900] "GET /users/sign_up HTTP/1.0" 200 - 0.0066
+202.177.68.248 - - [17/Dec/2017:23:16:17 +0900] "POST /users HTTP/1.0" 200 - 0.5672
+202.177.68.248 - - [17/Dec/2017:23:16:33 +0900] "POST /users HTTP/1.0" 302 - 0.7953
+202.177.68.248 - - [17/Dec/2017:23:16:33 +0900] "GET / HTTP/1.0" 200 - 0.0044
+I, [2017-12-17T23:20:23.280325 #27295]  INFO -- : executing ["/var/www/kaohon/shared/bundle/ruby/2.3.0/bin/unicorn", "-c", "/var/www/kaohon/current/config/unicorn/production.rb", "-E", "deployment", "-D", {8=>#<Kgio::UNIXServer:fd 8>}] (in /var/www/kaohon/releases/20171217142010)
+I, [2017-12-17T23:20:23.280419 #27295]  INFO -- : forked child re-executing...
+I, [2017-12-17T23:20:23.566517 #27295]  INFO -- : inherited addr=/var/www/kaohon/current/tmp/sockets/unicorn.sock fd=8
+I, [2017-12-17T23:20:23.566727 #27295]  INFO -- : Refreshing Gem list
+The PGconn, PGresult, and PGError constants are deprecated, and will be
+removed as of version 1.0.
+
+You should use PG::Connection, PG::Result, and PG::Error instead, respectively.
+
+Called from /var/www/kaohon/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in `load_dependency'
+I, [2017-12-17T23:20:25.936391 #27295]  INFO -- : master process ready
+I, [2017-12-17T23:20:25.937799 #27301]  INFO -- : worker=0 ready
+I, [2017-12-17T23:20:25.938882 #27303]  INFO -- : worker=1 ready
+I, [2017-12-17T23:20:26.119688 #23484]  INFO -- : reaped #<Process::Status: pid 23489 exit 0> worker=0
+I, [2017-12-17T23:20:26.119798 #23484]  INFO -- : reaped #<Process::Status: pid 23491 exit 0> worker=1
+I, [2017-12-17T23:20:26.119830 #23484]  INFO -- : master complete
+202.177.68.248 - - [17/Dec/2017:23:21:32 +0900] "GET / HTTP/1.0" 200 - 0.0441
+202.177.68.248 - - [17/Dec/2017:23:21:35 +0900] "GET /users/sign_up HTTP/1.0" 200 - 0.0732
+202.177.68.248 - - [17/Dec/2017:23:21:46 +0900] "POST /users HTTP/1.0" 200 - 0.5682
+I, [2017-12-17T23:23:52.198498 #27295]  INFO -- : reaped #<Process::Status: pid 27301 exit 0> worker=0
+I, [2017-12-17T23:23:52.298842 #27295]  INFO -- : reaped #<Process::Status: pid 27303 exit 0> worker=1
+I, [2017-12-17T23:23:52.298951 #27295]  INFO -- : master complete
+I, [2017-12-17T23:24:56.108737 #31687]  INFO -- : Refreshing Gem list
+I, [2017-12-17T23:24:58.476003 #31687]  INFO -- : unlinking existing socket=/var/www/kaohon/current/tmp/sockets/unicorn.sock
+I, [2017-12-17T23:24:58.476724 #31687]  INFO -- : listening on addr=/var/www/kaohon/current/tmp/sockets/unicorn.sock fd=8
+The PGconn, PGresult, and PGError constants are deprecated, and will be
+removed as of version 1.0.
+
+You should use PG::Connection, PG::Result, and PG::Error instead, respectively.
+
+Called from /var/www/kaohon/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in `load_dependency'
+I, [2017-12-17T23:24:58.488537 #31687]  INFO -- : master process ready
+I, [2017-12-17T23:24:58.493858 #31691]  INFO -- : worker=0 ready
+I, [2017-12-17T23:24:58.496048 #31693]  INFO -- : worker=1 ready
+I, [2017-12-17T23:24:58.746181 #31789]  INFO -- : executing ["/var/www/kaohon/shared/bundle/ruby/2.3.0/bin/unicorn", "-c", "/var/www/kaohon/current/config/unicorn/production.rb", "-E", "deployment", "-D", {8=>#<Kgio::UNIXServer:/var/www/kaohon/current/tmp/sockets/unicorn.sock>}] (in /var/www/kaohon/releases/20171217142442)
+I, [2017-12-17T23:24:58.746267 #31789]  INFO -- : forked child re-executing...
+I, [2017-12-17T23:24:59.028970 #31789]  INFO -- : inherited addr=/var/www/kaohon/current/tmp/sockets/unicorn.sock fd=8
+I, [2017-12-17T23:24:59.029148 #31789]  INFO -- : Refreshing Gem list
+The PGconn, PGresult, and PGError constants are deprecated, and will be
+removed as of version 1.0.
+
+You should use PG::Connection, PG::Result, and PG::Error instead, respectively.
+
+Called from /var/www/kaohon/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in `load_dependency'
+I, [2017-12-17T23:25:01.429386 #31789]  INFO -- : master process ready
+I, [2017-12-17T23:25:01.436377 #31794]  INFO -- : worker=0 ready
+I, [2017-12-17T23:25:01.437624 #31796]  INFO -- : worker=1 ready
+I, [2017-12-17T23:25:01.617757 #31687]  INFO -- : reaped #<Process::Status: pid 31691 exit 0> worker=0
+I, [2017-12-17T23:25:01.617854 #31687]  INFO -- : reaped #<Process::Status: pid 31693 exit 0> worker=1
+I, [2017-12-17T23:25:01.617885 #31687]  INFO -- : master complete
+202.177.68.248 - - [17/Dec/2017:23:25:30 +0900] "GET / HTTP/1.0" 200 - 0.0432
+202.177.68.248 - - [17/Dec/2017:23:25:32 +0900] "GET /users/sign_up HTTP/1.0" 200 - 0.0721
+202.177.68.248 - - [17/Dec/2017:23:25:41 +0900] "POST /users HTTP/1.0" 200 - 0.5856
+202.177.68.248 - - [17/Dec/2017:23:25:53 +0900] "POST /users HTTP/1.0" 302 - 1.3879
+202.177.68.248 - - [17/Dec/2017:23:25:53 +0900] "GET / HTTP/1.0" 200 - 0.0045
+202.177.68.248 - - [17/Dec/2017:23:32:47 +0900] "GET /users/confirmation?confirmation_token=ybrEJoKx6ZVBxr6ZWpDZ HTTP/1.0" 302 - 0.0137
+202.177.68.248 - - [17/Dec/2017:23:32:47 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0131
+202.177.68.248 - - [17/Dec/2017:23:32:57 +0900] "POST /users/sign_in HTTP/1.0" 302 - 0.1646
+202.177.68.248 - - [17/Dec/2017:23:32:57 +0900] "GET / HTTP/1.0" 200 - 0.0054
+202.177.68.248 - - [17/Dec/2017:23:33:30 +0900] "GET /topics HTTP/1.0" 200 - 0.0258
+202.177.68.248 - - [17/Dec/2017:23:33:49 +0900] "GET /users HTTP/1.0" 200 - 0.0398
+202.177.68.248 - - [17/Dec/2017:23:34:06 +0900] "POST /relationships HTTP/1.0" 200 - 0.0295
+202.177.68.248 - - [17/Dec/2017:23:34:06 +0900] "DELETE /relationships/3 HTTP/1.0" 200 - 0.0241
+202.177.68.248 - - [17/Dec/2017:23:34:07 +0900] "POST /relationships HTTP/1.0" 200 - 0.0102
+202.177.68.248 - - [17/Dec/2017:23:34:07 +0900] "POST /relationships HTTP/1.0" 200 - 0.0110
+202.177.68.248 - - [17/Dec/2017:23:34:08 +0900] "DELETE /relationships/5 HTTP/1.0" 200 - 0.0125
+202.177.68.248 - - [17/Dec/2017:23:34:08 +0900] "POST /relationships HTTP/1.0" 200 - 0.0096
+202.177.68.248 - - [17/Dec/2017:23:34:08 +0900] "DELETE /relationships/6 HTTP/1.0" 200 - 0.0101
+202.177.68.248 - - [17/Dec/2017:23:34:08 +0900] "POST /relationships HTTP/1.0" 200 - 0.0095
+202.177.68.248 - - [17/Dec/2017:23:34:09 +0900] "DELETE /relationships/7 HTTP/1.0" 200 - 0.0103
+202.177.68.248 - - [17/Dec/2017:23:34:11 +0900] "POST /conversations?recipient_id=3&sender_id=11 HTTP/1.0" 302 - 0.0138
+202.177.68.248 - - [17/Dec/2017:23:34:11 +0900] "GET /conversations/2/messages HTTP/1.0" 200 - 0.0262
+202.177.68.248 - - [17/Dec/2017:23:34:22 +0900] "POST /relationships HTTP/1.0" 200 - 0.0097
+202.177.68.248 - - [17/Dec/2017:23:34:23 +0900] "POST /conversations?recipient_id=1&sender_id=11 HTTP/1.0" 302 - 0.0173
+202.177.68.248 - - [17/Dec/2017:23:34:23 +0900] "GET /conversations/3/messages HTTP/1.0" 200 - 0.0211
+202.177.68.248 - - [17/Dec/2017:23:34:26 +0900] "POST /conversations/3/messages HTTP/1.0" 302 - 0.0088
+202.177.68.248 - - [17/Dec/2017:23:34:26 +0900] "GET /conversations/3/messages HTTP/1.0" 200 - 0.0095
+202.177.68.248 - - [17/Dec/2017:23:34:35 +0900] "GET /topics HTTP/1.0" 200 - 0.0096
+202.177.68.248 - - [17/Dec/2017:23:34:38 +0900] "GET /topics/1 HTTP/1.0" 200 - 0.0278
+202.177.68.248 - - [17/Dec/2017:23:34:55 +0900] "GET /topics/2 HTTP/1.0" 200 - 0.0087
+202.177.68.248 - - [17/Dec/2017:23:35:02 +0900] "GET /users HTTP/1.0" 200 - 0.0290
+202.177.68.248 - - [17/Dec/2017:23:35:08 +0900] "DELETE /users/sign_out HTTP/1.0" 302 - 0.0074
+202.177.68.248 - - [17/Dec/2017:23:35:08 +0900] "GET / HTTP/1.0" 200 - 0.0050
+202.177.68.248 - - [17/Dec/2017:23:35:11 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0069
+202.177.68.248 - - [17/Dec/2017:23:35:15 +0900] "POST /users/sign_in HTTP/1.0" 302 - 0.1643
+202.177.68.248 - - [17/Dec/2017:23:35:15 +0900] "GET / HTTP/1.0" 200 - 0.0098
+202.177.68.248 - - [17/Dec/2017:23:35:18 +0900] "GET /conversations HTTP/1.0" 200 - 0.0126
+202.177.68.248 - - [17/Dec/2017:23:35:19 +0900] "GET /conversations/1/messages HTTP/1.0" 200 - 0.0093
+202.177.68.248 - - [17/Dec/2017:23:35:27 +0900] "GET /users HTTP/1.0" 200 - 0.0209
+202.177.68.248 - - [17/Dec/2017:23:40:53 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0095
+202.177.68.248 - - [17/Dec/2017:23:41:03 +0900] "PUT /users HTTP/1.0" 302 - 0.3155
+202.177.68.248 - - [17/Dec/2017:23:41:03 +0900] "GET / HTTP/1.0" 200 - 0.0057
+202.177.68.248 - - [17/Dec/2017:23:41:05 +0900] "GET /users/edit HTTP/1.0" 200 - 0.0078
+202.177.68.248 - - [17/Dec/2017:23:41:14 +0900] "PUT /users HTTP/1.0" 302 - 0.2817
+202.177.68.248 - - [17/Dec/2017:23:41:14 +0900] "GET / HTTP/1.0" 200 - 0.0052
+202.177.68.248 - - [17/Dec/2017:23:41:19 +0900] "GET /topics HTTP/1.0" 200 - 0.0104
+202.177.68.248 - - [17/Dec/2017:23:41:28 +0900] "POST /topics HTTP/1.0" 302 - 0.0076
+202.177.68.248 - - [17/Dec/2017:23:41:28 +0900] "GET /topics HTTP/1.0" 200 - 0.0114
+202.177.68.248 - - [17/Dec/2017:23:41:36 +0900] "GET /topics HTTP/1.0" 200 - 0.0114
+202.177.68.248 - - [17/Dec/2017:23:41:39 +0900] "DELETE /users/sign_out HTTP/1.0" 302 - 0.0062
+202.177.68.248 - - [17/Dec/2017:23:41:39 +0900] "GET / HTTP/1.0" 200 - 0.0041
+202.177.68.248 - - [17/Dec/2017:23:41:41 +0900] "GET /users/sign_in HTTP/1.0" 200 - 0.0065
+I, [2017-12-17T23:41:42.993602 #31796]  INFO -- omniauth: (facebook) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:23:41:42 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0071
+I, [2017-12-17T23:41:43.250775 #31794]  INFO -- omniauth: (facebook) Request phase initiated.
+202.177.68.248 - - [17/Dec/2017:23:41:43 +0900] "GET /users/auth/facebook HTTP/1.0" 302 265 0.0068
+I, [2017-12-17T23:41:43.486257 #31796]  INFO -- omniauth: (facebook) Callback phase initiated.
+202.177.68.248 - - [17/Dec/2017:23:41:43 +0900] "GET /users/auth/facebook/callback?code=AQDmYQHu0Cni0wdgbKVcqn7EyN_6_vtWqbtc0jx019jZeeX6zAKyGVJCC2gCBurH9bICxcf6oBxVLU-3-nL6JetWMPza7wtX3UhMKaMqlwENbZuBEwf_jD_FJtLZgSOg03fLkHbc2EY8DY-I5fKWF7VRkTiRsZ_gl5liDtskrfLFLAhb11Jlc8q8h0x--aPT7sz9wy-K5ebodDlkU0YL7mInL0msfEc7j-6rQe5Aqch1Ll47rarthDJ-Cqx7rm73DxVxWpMQjP5X6qpqSzNPeUR5EnmIXEYLnO6SWuqLkfrxmisbPTHV6R1Km6zyNcAIQJgn95rmx44_TV74yANvc0Xh&state=5cfd45eefc6c55d0c9f0f45b52d0d7a65dd6dd7421e3604b HTTP/1.0" 302 - 0.4266
+202.177.68.248 - - [17/Dec/2017:23:41:44 +0900] "GET / HTTP/1.0" 200 - 0.0058
+202.177.68.248 - - [17/Dec/2017:23:41:45 +0900] "GET /topics HTTP/1.0" 200 - 0.0107
+202.177.68.248 - - [17/Dec/2017:23:41:56 +0900] "POST /topics HTTP/1.0" 302 - 0.0069
+202.177.68.248 - - [17/Dec/2017:23:41:56 +0900] "GET /topics HTTP/1.0" 200 - 0.0107
+I, [2017-12-17T23:46:44.812135 #31789]  INFO -- : reaped #<Process::Status: pid 31794 exit 0> worker=0
+I, [2017-12-17T23:46:44.812239 #31789]  INFO -- : reaped #<Process::Status: pid 31796 exit 0> worker=1
+I, [2017-12-17T23:46:44.812301 #31789]  INFO -- : master complete
+I, [2017-12-17T23:47:40.380721 #3593]  INFO -- : Refreshing Gem list
+I, [2017-12-17T23:47:42.757384 #3593]  INFO -- : unlinking existing socket=/var/www/kaohon/current/tmp/sockets/unicorn.sock
+I, [2017-12-17T23:47:42.757537 #3593]  INFO -- : listening on addr=/var/www/kaohon/current/tmp/sockets/unicorn.sock fd=8
+The PGconn, PGresult, and PGError constants are deprecated, and will be
+removed as of version 1.0.
+
+You should use PG::Connection, PG::Result, and PG::Error instead, respectively.
+
+Called from /var/www/kaohon/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in `load_dependency'
+I, [2017-12-17T23:47:42.769151 #3593]  INFO -- : master process ready
+I, [2017-12-17T23:47:42.774312 #3597]  INFO -- : worker=0 ready
+I, [2017-12-17T23:47:42.778565 #3599]  INFO -- : worker=1 ready
+I, [2017-12-17T23:47:42.983612 #3695]  INFO -- : executing ["/var/www/kaohon/shared/bundle/ruby/2.3.0/bin/unicorn", "-c", "/var/www/kaohon/current/config/unicorn/production.rb", "-E", "deployment", "-D", {8=>#<Kgio::UNIXServer:/var/www/kaohon/current/tmp/sockets/unicorn.sock>}] (in /var/www/kaohon/releases/20171217144726)
+I, [2017-12-17T23:47:42.983722 #3695]  INFO -- : forked child re-executing...
+I, [2017-12-17T23:47:43.272347 #3695]  INFO -- : inherited addr=/var/www/kaohon/current/tmp/sockets/unicorn.sock fd=8
+I, [2017-12-17T23:47:43.272539 #3695]  INFO -- : Refreshing Gem list
+The PGconn, PGresult, and PGError constants are deprecated, and will be
+removed as of version 1.0.
+
+You should use PG::Connection, PG::Result, and PG::Error instead, respectively.
+
+Called from /var/www/kaohon/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in `load_dependency'
+I, [2017-12-17T23:47:45.676296 #3695]  INFO -- : master process ready
+I, [2017-12-17T23:47:45.677616 #3700]  INFO -- : worker=0 ready
+I, [2017-12-17T23:47:45.680066 #3702]  INFO -- : worker=1 ready
+I, [2017-12-17T23:47:45.860197 #3593]  INFO -- : reaped #<Process::Status: pid 3597 exit 0> worker=0
+I, [2017-12-17T23:47:45.860288 #3593]  INFO -- : reaped #<Process::Status: pid 3599 exit 0> worker=1
+I, [2017-12-17T23:47:45.860318 #3593]  INFO -- : master complete

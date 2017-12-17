@@ -1,0 +1,193 @@
+nojiritoshihiko-no-MacBook-Air:kaohon nojiritoshihiko$ bundle exec cap production deploy:reset
+00:00 deploy:reset
+      01 /usr/local/rbenv/bin/rbenv exec bundle exec rake db:migrate:reset
+      01 The PGconn, PGresult, and PGError constants are deprecated, and will be
+      01 removed as of version 1.0.
+      01
+      01 You should use PG::Connection, PG::Result, and PG::Error instead, respectively.
+      01
+      01 Called from /var/www/kaohon/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in …
+      01 == 20171112081649 DeviseCreateUsers: migrating ================================
+      01 -- create_table(:users)
+      01    -> 0.0101s
+      01 -- add_index(:users, :email, {:unique=>true})
+      01    -> 0.0036s
+      01 -- add_index(:users, :reset_password_token, {:unique=>true})
+      01    -> 0.0036s
+      01 == 20171112081649 DeviseCreateUsers: migrated (0.0175s) =======================
+      01
+      01 == 20171112084550 CreateTopics: migrating =====================================
+      01 -- create_table(:topics)
+      01    -> 0.0112s
+      01 == 20171112084550 CreateTopics: migrated (0.0112s) ============================
+      01
+      01 == 20171112084649 CreateComments: migrating ===================================
+      01 -- create_table(:comments)
+      01    -> 0.0162s
+      01 == 20171112084649 CreateComments: migrated (0.0162s) ==========================
+      01
+      01 == 20171112084902 CreateConversations: migrating ==============================
+      01 -- create_table(:conversations)
+      01    -> 0.0039s
+      01 == 20171112084902 CreateConversations: migrated (0.0039s) =====================
+      01
+      01 == 20171112085041 CreateMessages: migrating ===================================
+      01 -- create_table(:messages)
+      01    -> 0.0153s
+      01 == 20171112085041 CreateMessages: migrated (0.0154s) ==========================
+      01
+      01 == 20171112085755 CreateRelationships: migrating ==============================
+      01 -- create_table(:relationships)
+      01    -> 0.0040s
+      01 == 20171112085755 CreateRelationships: migrated (0.0040s) =====================
+      01
+      01 == 20171120111942 AddNameToUsers: migrating ===================================
+      01 -- add_column(:users, :name, :string)
+      01    -> 0.0004s
+      01 == 20171120111942 AddNameToUsers: migrated (0.0004s) ==========================
+      01
+      01 == 20171123104631 AddOmniauthColumnsToUsers: migrating ========================
+      01 -- add_column(:users, :uid, :string, {:null=>false, :default=>""})
+      01    -> 0.0118s
+      01 -- add_column(:users, :provider, :string, {:null=>false, :default=>""})
+      01    -> 0.0110s
+      01 -- add_column(:users, :image_url, :string)
+      01    -> 0.0003s
+      01 -- add_index(:users, [:uid, :provider], {:unique=>true})
+      01    -> 0.0038s
+      01 == 20171123104631 AddOmniauthColumnsToUsers: migrated (0.0270s) ===============
+      01
+      01 == 20171124102657 AddAvatarToUsers: migrating =================================
+      01 -- add_column(:users, :avatar, :string)
+      01    -> 0.0004s
+      01 == 20171124102657 AddAvatarToUsers: migrated (0.0005s) ========================
+      01
+      01 == 20171127050528 AddIndexToRelationships: migrating ==========================
+      01 -- add_index(:relationships, :follower_id)
+      01    -> 0.0039s
+      01 -- add_index(:relationships, :followed_id)
+      01    -> 0.0035s
+      01 -- add_index(:relationships, [:follower_id, :followed_id], {:unique=>true})
+      01    -> 0.0036s
+      01 == 20171127050528 AddIndexToRelationships: migrated (0.0111s) =================
+      01
+      01 == 20171202032723 AddBodyToMessages: migrating ================================
+      01 -- add_column(:messages, :body, :text)
+      01    -> 0.0004s
+      01 == 20171202032723 AddBodyToMessages: migrated (0.0004s) =======================
+      01
+    ✔ 01 app@13.115.151.112 3.225s
+nojiritoshihiko-no-MacBook-Air:kaohon nojiritoshihiko$ bundle exec cap production deploy:seed
+00:00 deploy:seed
+      01 /usr/local/rbenv/bin/rbenv exec bundle exec rake db:seed
+      01 The PGconn, PGresult, and PGError constants are deprecated, and will be
+      01 removed as of version 1.0.
+      01
+      01 You should use PG::Connection, PG::Result, and PG::Error instead, respectively.
+      01
+      01 Called from /var/www/kaohon/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in …
+    ✔ 01 app@13.115.151.112 4.772s
+nojiritoshihiko-no-MacBook-Air:kaohon nojiritoshihiko$ bundle exec cap production deploy
+00:00 git:wrapper
+      01 mkdir -p /tmp
+    ✔ 01 app@13.115.151.112 0.095s
+      Uploading /tmp/git-ssh-kaohon-production-nojiritoshihiko.sh 100.0%
+      02 chmod 700 /tmp/git-ssh-kaohon-production-nojiritoshihiko.sh
+    ✔ 02 app@13.115.151.112 0.103s
+00:00 git:check
+      01 git ls-remote --heads https://github.com/NaruhikoNojiri/kaohon
+      01 21f2cd6101769f88f86fe31d0e37ec942d8fcde8	refs/heads/master
+    ✔ 01 app@13.115.151.112 0.955s
+00:01 deploy:check:directories
+      01 mkdir -p /var/www/kaohon/shared /var/www/kaohon/releases
+    ✔ 01 app@13.115.151.112 0.098s
+00:01 deploy:check:linked_dirs
+      01 mkdir -p /var/www/kaohon/shared/log /var/www/kaohon/shared/tmp/pids /var/www/kaohon/shared/tmp/cache /var/www/kaohon/sha…
+    ✔ 01 app@13.115.151.112 0.096s
+00:01 deploy:check:make_linked_dirs
+      01 mkdir -p /var/www/kaohon/shared /var/www/kaohon/shared/config
+    ✔ 01 app@13.115.151.112 0.098s
+00:02 git:clone
+      The repository mirror is at /var/www/kaohon/repo
+00:02 git:update
+      01 git remote update --prune
+      01 Fetching origin
+    ✔ 01 app@13.115.151.112 0.783s
+00:03 git:create_release
+      01 mkdir -p /var/www/kaohon/releases/20171217144726
+    ✔ 01 app@13.115.151.112 0.109s
+      02 git archive master | tar -x -f - -C /var/www/kaohon/releases/20171217144726
+    ✔ 02 app@13.115.151.112 0.127s
+00:03 git:set_current_revision
+      01 echo "21f2cd6101769f88f86fe31d0e37ec942d8fcde8" >> REVISION
+    ✔ 01 app@13.115.151.112 0.101s
+00:03 deploy:symlink:linked_files
+      01 mkdir -p /var/www/kaohon/releases/20171217144726 /var/www/kaohon/releases/20171217144726/config
+    ✔ 01 app@13.115.151.112 0.102s
+      02 ln -s /var/www/kaohon/shared/.env /var/www/kaohon/releases/20171217144726/.env
+    ✔ 02 app@13.115.151.112 0.104s
+      03 rm /var/www/kaohon/releases/20171217144726/config/secrets.yml
+    ✔ 03 app@13.115.151.112 0.102s
+      04 ln -s /var/www/kaohon/shared/config/secrets.yml /var/www/kaohon/releases/20171217144726/config/secrets.yml
+    ✔ 04 app@13.115.151.112 0.101s
+00:04 deploy:symlink:linked_dirs
+      01 mkdir -p /var/www/kaohon/releases/20171217144726 /var/www/kaohon/releases/20171217144726/tmp /var/www/kaohon/releases/20…
+    ✔ 01 app@13.115.151.112 0.101s
+      02 rm -rf /var/www/kaohon/releases/20171217144726/log
+    ✔ 02 app@13.115.151.112 0.114s
+      03 ln -s /var/www/kaohon/shared/log /var/www/kaohon/releases/20171217144726/log
+    ✔ 03 app@13.115.151.112 0.098s
+      04 ln -s /var/www/kaohon/shared/tmp/pids /var/www/kaohon/releases/20171217144726/tmp/pids
+    ✔ 04 app@13.115.151.112 0.100s
+      05 ln -s /var/www/kaohon/shared/tmp/cache /var/www/kaohon/releases/20171217144726/tmp/cache
+    ✔ 05 app@13.115.151.112 0.095s
+      06 ln -s /var/www/kaohon/shared/tmp/sockets /var/www/kaohon/releases/20171217144726/tmp/sockets
+    ✔ 06 app@13.115.151.112 0.103s
+      07 rm -rf /var/www/kaohon/releases/20171217144726/public/uploads
+    ✔ 07 app@13.115.151.112 0.110s
+      08 ln -s /var/www/kaohon/shared/public/uploads /var/www/kaohon/releases/20171217144726/public/uploads
+    ✔ 08 app@13.115.151.112 0.364s
+      09 rm -rf /var/www/kaohon/releases/20171217144726/public/assets
+    ✔ 09 app@13.115.151.112 0.099s
+      10 ln -s /var/www/kaohon/shared/public/assets /var/www/kaohon/releases/20171217144726/public/assets
+    ✔ 10 app@13.115.151.112 0.103s
+00:07 bundler:install
+      01 /usr/local/rbenv/bin/rbenv exec bundle install --path /var/www/kaohon/shared/bundle --without development test --deploym…
+    ✔ 01 app@13.115.151.112 0.501s
+00:08 deploy:assets:precompile
+      01 /usr/local/rbenv/bin/rbenv exec bundle exec rake assets:precompile
+    ✔ 01 app@13.115.151.112 2.969s
+00:11 deploy:assets:backup_manifest
+      01 mkdir -p /var/www/kaohon/releases/20171217144726/assets_manifest_backup
+    ✔ 01 app@13.115.151.112 0.109s
+      02 cp /var/www/kaohon/releases/20171217144726/public/assets/.sprockets-manifest-ce094c0e09b4833f8dca4e7fcf9045fb.json /var/…
+    ✔ 02 app@13.115.151.112 0.111s
+00:11 deploy:migrate
+      [deploy:migrate] Run `rake db:migrate`
+00:11 deploy:migrating
+      01 /usr/local/rbenv/bin/rbenv exec bundle exec rake db:migrate
+      01 The PGconn, PGresult, and PGError constants are deprecated, and will be
+      01 removed as of version 1.0.
+      01
+      01 You should use PG::Connection, PG::Result, and PG::Error instead, respectively.
+      01
+      01 Called from /var/www/kaohon/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/dependencies.rb:240:in …
+    ✔ 01 app@13.115.151.112 2.763s
+00:14 deploy:symlink:release
+      01 ln -s /var/www/kaohon/releases/20171217144726 /var/www/kaohon/releases/current
+    ✔ 01 app@13.115.151.112 0.177s
+      02 mv /var/www/kaohon/releases/current /var/www/kaohon
+    ✔ 02 app@13.115.151.112 0.101s
+00:14 unicorn:start
+      01 /usr/local/rbenv/bin/rbenv exec bundle exec unicorn -c /var/www/kaohon/current/config/unicorn/production.rb -E deploymen…
+    ✔ 01 app@13.115.151.112 2.834s
+      unicorn restarting...
+      02 kill -s USR2 `cat /var/www/kaohon/current/tmp/pids/unicorn.pid`
+    ✔ 02 app@13.115.151.112 0.099s
+00:28 deploy:cleanup
+      Keeping 5 of 6 deployed releases on 13.115.151.112
+      01 rm -rf /var/www/kaohon/releases/20171217065122
+    ✔ 01 app@13.115.151.112 0.100s
+00:28 deploy:log_revision
+      01 echo "Branch master (at 21f2cd6101769f88f86fe31d0e37ec942d8fcde8) deployed as release 20171217144726 by nojiritoshihiko"…
+    ✔ 01 app@13.115.151.112 0.099s
