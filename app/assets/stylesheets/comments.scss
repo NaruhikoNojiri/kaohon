@@ -12,10 +12,32 @@ ul{
   list-style-type: none;
 }
 
-.right {
-text-align: right;
+.comment_row {
+  margin: auto; //これがないとなぜか勝手にマージンがつく。
+  padding: 20px 20px 0px 0px;
+  background-color: white;
+  text-align: left;
+  word-wrap: break-word;
 }
 
-.left {
-text-align: left;
+#comment {
+  display: flex;
+}
+
+#comment_detail {
+  margin-left: 10px;
+}
+
+#comment_input {
+  width: 100%;
+  display: flex;
+  input {
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 20px;
+  }
+}
+
+.actions{
+  margin: 10px 10px 10px 0px;
 }

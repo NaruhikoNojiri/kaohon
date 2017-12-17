@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
   end
 
   def index
-    @messages = @conversation.messages
+    @messages = @conversation.messages.order(id: :asc)
     if @messages.length > 10
       @over_ten = true
       @messages = @messages[-10..-1]
@@ -13,7 +13,7 @@ class MessagesController < ApplicationController
 
     if params[:m]
       @over_ten = false
-      @messages = @conversation.messages
+      @messages = @conversation.messages.order(id: :asc)
     end
 
     # update "read" status.

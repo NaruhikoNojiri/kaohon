@@ -5,7 +5,7 @@
     <%= form_for(@topic) do |f| %>
       <% if @topic.errors.any? %>
         <div id="error_explanation">
-          <h2><%= @topic.errors.count %>件のエラーがあります。</h2>
+          <h3><%= @topic.errors.count %>件のエラーがあります。</h3>
           <ul>
           <% @topic.errors.full_messages.each do |msg| %>
             <li><%= msg %></li>
@@ -13,8 +13,11 @@
           </ul>
         </div>
       <% end %>
-      <%= f.text_field :content, class: 'form-control'%>
-      <%= f.submit '編集', class: 'btn btn-primary btn-block'%>
+      <p><%= f.text_field :content, class: 'form-control'%></p>
+      <p><%= f.submit '編集', class: 'btn btn-primary btn-block'%></p>
     <% end %>
+    <p class="center back">
+      <%= link_to 'トピック一覧へ戻る', topics_path %>
+    </p>
   </div>
 </div>

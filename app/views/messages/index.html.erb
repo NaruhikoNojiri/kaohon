@@ -1,48 +1,57 @@
-
-<% if @over_ten %>
-  <%= link_to '全てのメッセージを表示する', '?m=all' %>
-<% end %>
-
-<h2>会話一覧</h2>
-<p id="notice"><%= notice %></p>
-<!-- conversationコントローラーからリダイレクトした時にはflashを利用してエラーを表示。 -->
-<% if flash[:error].present? %>
-  <div id="error_explanation">
-    <h2><%= flash[:error].length %>件のエラーがあります。</h2>
-    <ul>
-    <% flash[:error].each do |e| %>
-      <li><%= e %></li>
-    <% end %>
-    </ul>
+<div class="container">
+  <div id="receiver">
+    <% receiver = get_receiver(@conversation)%>
+    <p class="left"><%= profile_img(receiver) %></p>
+    <p class="name"><%= receiver.name %></p>
   </div>
-<% end %>
+  <% if @over_ten %>
+    <%= link_to '全てのメッセージを表示する', '?m=all' %>
+  <% end %>
 
-<div class="ui segment">
-  <% @messages.each do |message| %>
-    <% if message.body %>
-      <% user = User.find(message.user_id) %>
-      <div class="item">
-        <div class="content">
-          <div class="header"><strong><%= user.name %></strong> <%= message.message_time %></div>
-          <div class="list">
-            <div class="item">
-              <i class="right triangle icon"></i>
-              <%= message.body %>
+  <p id="notice"><%= notice %></p>
+  <!-- conversationコントローラーからリダイレクトした時にはflashを利用してエラーを表示。 -->
+  <% if flash[:error].present? %>
+    <div id="error_explanation">
+      <h2><%= flash[:error].length %>件のエラーがあります。</h2>
+      <ul>
+      <% flash[:error].each do |e| %>
+        <li><%= e %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div id="messages_area">
+    <% @messages.each do |message| %>
+      <% if message.body %>
+        <% user = User.find(message.user_id) %>
+        <div class="message_row <%= my_message?(message)%>">
+          <%= profile_img(user) %>
+          <div class="content">
+            <div class="header">
+              <strong><%= user.name %></strong>
+              <%= message.message_time %>
+            </div>
+            <div class="list">
+              <div class="item">
+                <%= message.body %>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      <% end %>
     <% end %>
+  </div>
+
+  <%= form_for [@conversation, @message], html: {class: "ui reply form"} do |f| %>
+    <div class="field">
+      <%= f.text_area :body, class: "form-control" , placeholder: "メッセージを入力..."%>
+    </div>
+      <%= f.text_field :user_id, value: current_user.id, type: "hidden"  %>
+      <br/>
+    <div>
+      <%= f.submit "メッセージを送る" %>
+    </div>
+
   <% end %>
 </div>
-
-<%= form_for [@conversation, @message], html: {class: "ui reply form"} do |f| %>
-  <div class="field">
-    <%= f.text_area :body, class: "form-control" %>
-  </div>
-    <%= f.text_field :user_id, value: current_user.id, type: "hidden"  %>
-  <div>
-    <%= f.submit "メッセージを送る" %>
-  </div>
-
-<% end %>

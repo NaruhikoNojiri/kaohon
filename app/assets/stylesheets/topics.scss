@@ -1,89 +1,103 @@
 // Place all the styles related to the Topics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-body {
-    text-align: center;
-}
-
-header {
-    width: auto;
-    background-color: #005FFF;
-    height: 54px;
-    color: white;
-}
-navbar-default {
-    border: 0;
-}
-.navbar {
-    background-color: transparent;
-    color: white;
-    margin-bottom: 0px;
-}
-
-.navbar-brand {
-  margin: 0px;
-  border: 0px;
-}
-
-.navbar-nav {
-  background-color: transparent;
-}
-
-.kaohon_logo img{
-  width: 30px;
-  height: 30px;
-}
-
-ul li {
-  list-style: none;
-}
-
 .wrapper {
   margin-bottom: 74px;
   padding: 20px 20px 20px 35px;
-  .row {
-    border-bottom: 1px solid #ccc;
-    padding: 20px;
-    text-align: left;
-    word-wrap: break-word;
+  text-align: left;
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
 }
 
-.new_topic {
+// index.html
+.row {
+  margin: auto; //これがないとなぜか勝手にマージンがつく。
   border: 1px solid #ccc;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
+  background-color: white;
   text-align: left;
+  word-wrap: break-word;
+}
+
+#new_topic {
+  background-color: white;
+}
+
+#show_topic {
+  background-color: white;
+}
+
+.user_info {
+  display: flex;
+}
+
+.topic_form {
+  border: 1px solid #ccc;
+  padding: 20px;
   img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
   }
   .form-control {
-    width: 625px;
+    width: 1500%;
     margin: 10px;
   }
   .btn {
-    margin: 10px;
+    margin-top: 10px;
   }
 }
 
 .topic_input {
+  width: 100%;
   display:inline-flex;
   border-bottom: 1px solid #ccc;
 }
 
-footer {
-    width: 100%;
-    background-color:#dddddd;
-    padding: 20px 0 10px 0;
-    color: black;
-    margin: auto;
-    font-size: 12px;
-    position: absolute;    //htmlタグを基準とした配置
-    bottom: 0;
+.user_info_child {
+  margin-left: 10px;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.icons {
+  width: 100%;
+  padding: 10px;
+  border-left:1px solid #ccc;
+  border-right:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  background-color: white;
+  margin: auto;
+}
+
+// show.html
+#show_topic {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+#comments_list {
+  img {
+    min-width: 30px; //長文のコメントでの崩れ防止
+    width: 30px;
+    height: 30px;
+  }
+}
+
+#form_area {
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+#comments_area {
+  padding-left: 20px;
+  border :1px solid #ccc;
+  background-color: white;
 }

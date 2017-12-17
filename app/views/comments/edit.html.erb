@@ -1,11 +1,11 @@
 <div class="container">
   <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
     <p id="notice"><%= notice %></p>
-      <% if @topic.errors.any? %>
+      <% if @comment.errors.any? %>
         <div id="error_explanation">
-          <h2><%= @topic.errors.count %>件のエラーがあります。</h2>
+          <h2><%= @comment.errors.count %>件のエラーがあります。</h2>
           <ul>
-          <% @topic.errors.full_messages.each do |msg| %>
+          <% @comment.errors.full_messages.each do |msg| %>
             <li><%= msg %></li>
           <% end %>
           </ul>
@@ -18,8 +18,11 @@
           <%= f.text_field :content, placeholder: "内容", class: "form-control"  %>
         </div>
         <div class="actions">
-          <%= f.submit %>
+          <%= f.submit "編集", class: 'btn btn-primary btn-block' %>
         </div>
       <% end %>
+      <p class="center back">
+        <%= link_to 'トピック詳細へ戻る', topic_path(@topic) %>
+      </p>
   </div>
 </div>

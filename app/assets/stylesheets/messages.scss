@@ -1,3 +1,60 @@
 // Place all the styles related to the Messages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#receiver {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 50%;
+  background-color: white;
+  border: 1px solid #ccc;
+  display: flex;
+  padding: 20px;
+  img {
+    min-width: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+
+  .name {
+    margin-left: 10px;
+  }
+}
+
+#messages_area{
+  border: 1px solid #ccc;
+  background-color: white;
+  margin-bottom: 30px;
+  .right {
+    margin-left: auto;
+  }
+
+  .left {
+    margin-right: auto;
+  }
+}
+
+.message_row {
+  padding: 10px 10px 10px 0px;
+  margin-left: 10px;
+  background-color: white;
+  word-wrap: break-word;
+  width: 50%;
+  display: flex;
+  img {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+}
+
+#messages_area .content {
+  max-width: 90%; //長いメッセージだどmessages_areaをはみ出す。
+  padding: 10px;
+  background-color: #dddddd;
+  border-radius: 10px;
+  margin-left: 10px;
+}

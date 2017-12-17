@@ -3,7 +3,7 @@ class TopicsController < ApplicationController
   before_action :set_topic, only:[:show, :edit, :update, :destroy]
 
   def index
-    @topics = Topic.all
+    @topics = Topic.order('id desc')
     @topic = Topic.new
   end
 
@@ -11,7 +11,7 @@ class TopicsController < ApplicationController
     @topic = Topic.new(topics_params)
     @topic.user_id = current_user.id
     if @topic.save
-      redirect_to root_path, notice: "トピックを投稿しました！"
+      redirect_to topics_path, notice: "トピックを投稿しました！"
     else
       @topics = Topic.all
       render :index

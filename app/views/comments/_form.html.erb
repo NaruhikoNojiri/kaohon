@@ -2,7 +2,6 @@
   <% if comment.errors.any? %>
     <div id="error_explanation">
       <h2><%= comment.errors.count %>件のエラーがあります。</h2>
-
       <ul>
       <% comment.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -12,10 +11,11 @@
     <% comment.errors.clear %>
   <% end %>
   <%= f.hidden_field :topic_id %>
-  <div class="field">
-    <%= f.text_field :content, placeholder: "内容", class: "form-control"  %>
+  <div id="comment_input">
+    <%= profile_img(current_user)%>
+    <%= f.text_field :content, placeholder: "コメントする...", class: "form-control"  %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "コメント投稿", class: 'btn btn-primary btn-block'  %>
   </div>
 <% end %>

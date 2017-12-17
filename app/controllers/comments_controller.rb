@@ -7,11 +7,13 @@ class CommentsController < ApplicationController
     @topic = @comment.topic
     respond_to do |format|
       if @comment.save
+        @comment = @topic.comments.build #jsでformを再描画するためのリセット
+        format.html {render "topics/show"}
         format.js {render :index}
       else
         @topics = Topic.all
         @comments = @topic.comments
-        # format.html {render "topics/show"}
+        format.html {render "topics/show"}
         format.js {render :new}
       end
     end

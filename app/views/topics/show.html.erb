@@ -1,17 +1,30 @@
 <p id="notice"><%= notice %></p>
-<div class="child row">
-  <div class="container">
-    <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
-      <h1>詳細画面</h1>
-      <p><%= @topic.content %></p>
-      <h2>コメント一覧</h2>
-      <div id="comments_area">
+<div class="container">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
+    <div id="show_topic">
+      <div class="user_info">
+          <div class="user_img">
+            <%= profile_img(@topic.user)%>
+          </div>
+          <div class="user_info_child">
+            <%= @topic.user.name%><br/>
+            <small><%= @topic.created_at %>に投稿</small><br>
+          </div>
+      </div>
+      <div class="content">
+          <%= @topic.content %><br>
+      </div>
+    </div>
+    <div id="comments_area">
+      <div id="comments_list">
         <%= render partial: 'comments/index', locals: { comments: @comments, topic: @topic } %>
       </div>
       <div id="form_area">
         <%= render partial: 'comments/form', locals: { comment: @comment, topic: @topic } %>
       </div>
-      <%= link_to '戻る', topics_path %>
     </div>
+  <p class="center back">
+    <%= link_to 'トピック一覧へ戻る', topics_path %>
+  </p>
   </div>
 </div>
