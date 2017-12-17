@@ -4,4 +4,12 @@
 
 .profile {
   margin-bottom: 80px;
+
+  .container-child {
+    margin-bottom: 30px;
+    img {
+      max-width: 80px;
+      max-height: 80px;
+    }
+  }
 }

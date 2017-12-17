@@ -40,8 +40,10 @@
         <%= link_to topic_path(topic) do%>
           <strong>詳細</strong>
         <% end %>
-        <%= link_to '', edit_topic_path(topic), class: "fa fa-pencil-square-o fa-lg" %>
-        <%= link_to '', topic_path(topic), class: "fa fa-trash-o fa-lg", method: :delete, data: { confirm: '本当に削除していいですか？' } %>
+        <% if topic.user_id == current_user.id %>
+          <%= link_to '', edit_topic_path(topic), class: "fa fa-pencil-square-o fa-lg" %>
+          <%= link_to '', topic_path(topic), class: "fa fa-trash-o fa-lg", method: :delete, data: { confirm: '本当に削除していいですか？' } %>
+        <% end %>
       </div>
     <% end %>
   </div>

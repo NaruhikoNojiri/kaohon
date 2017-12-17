@@ -54,6 +54,17 @@ namespace :deploy do
     end
   end
 
+  desc 'Reset database'
+  task :reset do
+    on roles(:app) do
+      with rails_env: fetch(:rails_env) do
+        within current_path do
+          execute :bundle, :exec, :rake, 'db:migrate:reset'
+        end
+      end
+    end
+  end
+
   after :publishing, :restart
 
   after :restart, :clear_cache do

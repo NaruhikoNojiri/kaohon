@@ -1,39 +1,32 @@
 <div class="container">
   <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
-
     <h2>マイページ</h2>
-
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
       <%= devise_error_messages! %>
 
       <div class="field">
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true %>
+        <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: "メールアドレス" %>
       </div>
+      <br/>
 
       <% if @user.provider.blank? %>
         <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
           <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
         <% end %>
-
         <div class="field">
-          <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-          <%= f.password_field :password, autocomplete: "off" %>
+          <%= f.label :password %> <i>(パスワードを変更したくない場合は空欄にしてください。(<em>最低 <%= @minimum_password_length %>文字</em>))</i><br />
+          <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: "変更後のパスワード" %>
           <% if @minimum_password_length %>
-            <br />
-            <em><%= @minimum_password_length %> characters minimum</em>
           <% end %>
         </div>
+        <br>
 
         <div class="field">
           <%= f.label :password_confirmation %><br/>
-          <%= f.password_field :password_confirmation, autocomplete: "off" %>
+          <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', placeholder: "もう一度変更後のパスワードを入力してください" %>
         </div>
-
-        <div class="field">
-          <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br/>
-          <%= f.password_field :current_password, autocomplete: "off" %>
-        </div>
+        <br/>
       <% end %>
 
       <div class="field">
@@ -41,9 +34,20 @@
        <%= f.file_field :avatar %>
        <%= f.hidden_field :avatar_cache %>
       </div>
+      <br/>
+
+      <% if @user.provider.blank? %>
+        <div class="field">
+          <%= f.label :current_password %> <i>(変更内容確認のため現在のパスワードを入力してください。)</i><br/>
+          <%= f.password_field :current_password, autocomplete: "off", class: 'form-control', placeholder: "現在のパスワード" %>
+        </div>
+        <br/>
+      <% end %>
+
       <div class="actions">
-        <%= f.submit "更新する" %>
+        <%= f.submit "更新する" ,class: 'btn btn-primary btn-block'%>
       </div>
+      <br/>
     <% end %>
 
     <p>もう当サイトを利用しませんか？<%= button_to "アカウントを削除する", registration_path(resource_name), data: { confirm: "本当にアカウントを削除しますか?" }, method: :delete %></p>
